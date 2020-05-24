@@ -1,0 +1,169 @@
+<html>
+
+<head>
+  <title> Jashan Registration</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="../css/style2.css" rel="stylesheet">
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+  <script src="../js/app.js"></script>
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/popper.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/jashan-form.js"></script>
+  <script src="../js/local.js"></script>
+</head>
+
+<body onload="local(); load(); disableControls(); chkLink();">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../home.html">GNDU eStudante</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="../../home.html">Home</a>
+          </li>
+          <li>
+            <a href="notices.html">Notices</a>
+          </li>
+          <li class="dropdown active">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Forms
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="examination-form.html">Examination Form</a>
+              </li>
+              <li>
+                <a href="scholarship-form.html">Scholarship Form</a>
+              </li>
+              <li>
+                <a href="sports-form.html">Sports Form</a>
+              </li>
+              <li class="active">
+                <a href="jashan-form.html">Jashan Form</a>
+              </li>
+              <li>
+                  <a id="linkID" href="http://www.gnduadmissions.org/dhanpreet_idmay2017/idoddsem_index.asp" target="_blank">ID Courses</a>
+                </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Fee Collection
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a id="linkFee" href="http://slc.gndu.ac.in/StudentArea/Login.aspx" target="_blank">Generate Fee Slip</a>
+              </li>
+              
+              
+            </ul>
+          </li>
+          
+
+          <li>
+            <a href="syllabus.html">Syllabus</a>
+          </li>
+          <li>
+            <a href="messages.html">Messages</a>
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">My Account
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="account.html">Edit Details</a>
+              </li>
+              <li>
+                <a href="changePassword.html">Change Password</a>
+              </li>
+            </ul>
+
+          </li>
+          <li style="padding-right: 10px">
+            <a href="sign-in.html" onclick="deLocal();">
+              <span class="glyphicon glyphicon-user"></span> Sign Out</a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+  <!-- Page formatting code -->
+  <section id="team" class="section grey-section">
+    <div class="white-shape">
+      <div class="icon-container fixed border-radius">
+        <i class="fa fa-users"></i>
+      </div>
+    </div>
+    <div class="section-container">
+      <div class="container">
+        <div class="big-title">
+          <h3>
+            <span>JASHAN</span> Form</h3>
+          <div class="border-title"></div>
+        </div>
+        <!-- page enteries code -->
+        <div class="masonry-item col-md-6">
+          <div class="bgc-white p-20 bd">
+            <div class="mT-30">
+              <form>
+                <div class="form-group row">
+                  <label for="inputtext" class="col-sm-2 col-form-label">Name</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="stuname" placeholder="">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputtext" class="col-sm-2 col-form-label">Roll No</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="rollno" placeholder="">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputtext" class="col-sm-2 col-form-label">Class</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="class" placeholder="">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputtext" class="col-sm-2 col-form-label">Event</label>
+                  <div class="col-sm-10" id="event">
+                    <input id="event1" type="checkbox"> Bhangra
+                    <br>
+                    <input id="event2" type="checkbox"> Rangoli
+                    <br>
+                    <input id="event3" type="checkbox"> Quiz
+                    <br>
+                    <input id="event4" type="checkbox"> Painting
+                    <br>
+                    <input id="event5" type="checkbox"> Gidha
+                    <br>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="form-group row">
+          <div class="col-sm-10">
+            <button class="btn btn-primary" onclick="validate();">Submit</button>
+            <button class="btn btn-primary">Reset</button>
+          </div>
+        </div>
+
+
+</body>
+
+</html>

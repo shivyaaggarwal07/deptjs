@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/style2.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/tableStyle.css">
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/home.js"></script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/local.js"></script>
+  <script> 
+    chkLogin();
+  </script>
+</head>
+
+<body onload="load(); loadTT(); DmcStatus(); chkLink(); messageCount();">
+
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="home.html">GNDU eStudante</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="home.html">Home</a>
+          </li>
+          <li>
+            <a href="assets/templates/notices.html">Notices</a>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Forms
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="assets/templates/examination-form.html">Examination Form</a>
+              </li>
+              <li>
+                <a href="assets/templates/scholarship-form.html">Scholarship Form</a>
+              </li>
+              <li>
+                <a href="assets/templates/sports-form.html">Sports Form</a>
+              </li>
+              <li>
+                <a href="assets/templates/jashan-form.html">Jashan Form</a>
+              </li>
+              <li>
+                <a id="linkID" href="http://www.gnduadmissions.org/dhanpreet_idmay2017/idoddsem_index.asp" target="_blank">ID Courses</a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Fee Collection
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a id="linkFee" href="http://slc.gndu.ac.in/StudentArea/Login.aspx" target="_blank">Generate Fee Slip</a>
+              </li>
+              
+            </ul>
+          </li>
+          
+
+
+          <li>
+            <a href="assets/templates/syllabus.html">Syllabus</a>
+          </li>
+          <li>
+            <a href="assets/templates/messages.html">Messages<span id="messageCount" class="badge" style="visibility:hidden;margin-left:5px;color:blue;background: white;">5</span></a>
+          </li>
+        </ul>
+
+
+
+
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">My Account
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="assets/templates/account.html">Edit Details</a>
+              </li>
+              <li>
+                <a href="assets/templates/changePassword.html">Change Password</a>
+              </li>
+            </ul>
+
+          </li>
+          <li style="padding-right: 10px">
+            <a onclick="delLocal();">
+              <span class="glyphicon glyphicon-user"></span> Sign Out</a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+
+
+  <section id="team" class="section grey-section">
+    <div class="white-shape">
+      <div class="icon-container fixed border-radius">
+        <i class="fa fa-users"></i>
+      </div>
+    </div>
+    <div class="section-container">
+      <div class="container">
+        <div class="big-title">
+
+          <div class="border-title"></div>
+        </div>
+        <div class="container" style="align-content: center;text-align: center;">
+          <h2>Welcome <span id="nameLabel"></span></h2>
+        </div>
+        
+        <div class="container">
+          <h2>Notices</h2>
+          <div class="container" >
+            <label id="dmcStatus" style="visibility: hidden; color: red"> Your DMC(s) is/are pending. Please collect them from the Office.</label>
+          </div>
+          <table class="table">
+            <tr>
+              <td>
+                <img id="notice1" src="assets/images/1.jpg" height="400" width="300">
+              </td>
+              <td>
+                <img id="notice2" src="assets/images/2.jpg" height="400" width="300">
+              </td>
+              <td>
+                <img id="notice3" src="assets/images/1.jpg" height="400" width="300">
+              </td>
+            </tr>
+          </table>
+          <div align="right">
+            <a href="assets/templates/notices.html">View all Notices</a>
+          </div>
+        </div>
+
+
+        <div class="col-md-6">
+          <h2>Time Table</h2>
+          <div>
+            <h3> <span id="dayTitle"></span></h3>
+            <table class="table">
+
+              <tr>
+                <td>
+                  0900 - 1000 hours
+                </td>
+                <td>
+                  <label id="mon9-10" for="">Loading...</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  1000 - 1100 hours
+                </td>
+                <td>
+                  <label id="mon10-11" for="">Loading...</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  1100 - 1200 hours
+                </td>
+                <td>
+                  <label id="mon11-12" for="">Loading...</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  1200 - 1300 hours
+                </td>
+                <td>
+                  <label id="mon12-1" for="">Loading...</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  1300 - 1400 hours
+                </td>
+                <td>
+                  <label id="mon1-2" for="">Loading...</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  1400 - 1500 hours
+                </td>
+                <td>
+                  <label id="mon2-3" for="">Loading...</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  1500 - 1600 hours
+                </td>
+                <td>
+                  <label id="mon3-4" for="">Loading...</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  1600 - 1700 hours
+                </td>
+                <td>
+                  <label id="mon4-5" for="">Loading...</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a onclick="prevDay();">Previous</a>
+                </td>
+                <td>
+                  <a onclick="nextDay();" align="right">Next</a>
+                </td>
+              </tr>
+
+
+            </table>
+          </div>
+        </div>
+      
+    <div class="col-md-6">
+      <h2>Teachers on leave</h2>
+      <br><br><br>
+      <table class="table">
+        <tr>
+          <td>
+            <label id="teacherLeave1" for="">Loading...</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label id="teacherLeave2" for="">Loading...</label>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label id="teacherLeave3" for="">Loading...</label>
+          </td>
+        </tr>
+      </table>
+
+    </div>
+</body>
+
+</html>

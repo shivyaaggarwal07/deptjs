@@ -1,0 +1,194 @@
+<html>
+
+<head>
+    <title> Add New Batch </title>
+    <link href="../css/bstyle.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/style2.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <script src="../js/app.js"></script>
+    <script src="../js/addnewbatch.js"></script>
+    <script src="../js/papaparse.js"></script>
+</head>
+
+<body>
+    <!-- Page formatting code -->
+    <section id="team" class="section grey-section">
+        <div class="white-shape">
+            <div class="icon-container fixed border-radius">
+                <i class="fa fa-users"></i>
+            </div>
+        </div>
+        <div class="section-container">
+            <div class="container">
+                <div class="big-title">
+                    <h3>
+                        <span>Add New Batch</span> </h3>
+                    <div class="border-title"></div>
+                </div>
+                <!-- dropdown menu code -->
+                <div class="form-group col-md-2">
+                    <label for="inputState">Class</label>
+                    <select id="iclass" class="form-control">
+                        <option selected="selected">Choose...</option>
+                        <option>MCA-(TYC)</option>
+                        <option>MCA-(FYC)</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-2">
+                  <label for="inputState">Starting Year</label>
+                  <select id="iyear" class="form-control">
+                      <option selected>2018</option>
+                  </select>
+              </div>
+                <div class="masonry-item col-md-6">
+                  <label for="inputState">Add Students in Bulk</label>
+                  <input type="file" class="form-control" id="uploadCsv" placeholder="">
+                </div>
+                <div class="form-group col-md-2">
+                  <button  type="submit" id="addBatch" onclick="newBatch();">Add Class</button>
+                </div>
+                <!-- Using data tables code -->
+                <main class="main-content bgc-grey-100">
+                    <div id="mainContent">
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div class="bgc-white bd bdrs-3 p-20 mB-20">
+                              <label for="inputtext" class="col-sm-2 col-form-label">Add Individual Students Detail</label>
+                              <table id="dataTable" class="table table-striped table-bordered" cellspacing="0"
+                                width="100%">
+                                <thead>
+                                  <tr>
+                                    <th><b>Name</b></th>
+                                    <th><b>Father Name</b></th>
+                                    <th><b>Mother Name</b></th>
+                                    <th><b>Roll No</b></th>
+                                    <th><b>Password</b></th>
+                                    <th><b>Registration No</b></th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>
+                                      <input type="text" class="formcontrol" id="iname1" placeholder="">
+                                    </td>
+                                    <td>
+                                      <input type="text" class="formcontrol" id="ifathername1" placeholder="">
+                                    </td>
+                                    <td>
+                                      <input type="text" class="formcontrol" id="imothername1" placeholder="">
+                                    </td>
+                                    <td>
+                                      <input type="text" class="formcontrol" id="irollno1" placeholder="">
+                                    </td>
+                                    <td>
+                                      <input type="password" class="formcontrol" id="ipassword1" placeholder="">
+                                    </td>
+                                    <td>
+                                      <input type="text" class="formcontrol" id="iregistrationno1" placeholder="">
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <input type="text" class="formcontrol" id="iname2" placeholder="">
+                                    </td>
+                                    <td>
+                                      <input type="text" class="formcontrol" id="ifathername2" placeholder="">
+                                    </td>
+                                    <td>
+                                      <input type="text" class="formcontrol" id="imothername2" placeholder="">
+                                    </td>
+                                    <td>
+                                      <input type="text" class="formcontrol" id="irollno2" placeholder="">
+                                    </td>
+                                    <td>
+                                      <input type="password" class="formcontrol" id="ipassword2" placeholder="">
+                                    </td>
+                                    <td>
+                                      <input type="text" class="formcontrol" id="iregistrationno2" placeholder="">
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <input type="text" class="formcontrol" id="iname3" placeholder="">
+                                    </td>
+                                    <td>
+                                      <input type="text" class="formcontrol" id="ifathername3" placeholder="">
+                                    </td>
+                                    <td>
+                                      <input type="text" class="formcontrol" id="imothername3" placeholder="">
+                                    </td>
+                                    <td>
+                                      <input type="text" class="formcontrol" id="irollno3" placeholder="">
+                                    </td>
+                                    <td>
+                                      <input type="password" class="formcontrol" id="ipassword3" placeholder="">
+                                    </td>
+                                    <td>
+                                      <input type="text" class="formcontrol" id="iregistrationno3" placeholder="">
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <input type="text" class="formcontrol" id="iname4" placeholder="">
+                                    </td>
+                                    <td>
+                                      <input type="text" class="formcontrol" id="ifathername4" placeholder="">
+                                    </td>
+                                    <td>
+                                      <input type="text" class="formcontrol" id="imothername4" placeholder="">
+                                    </td>
+                                    <td>
+                                      <input type="text" class="formcontrol" id="irollno4" placeholder="">
+                                    </td>
+                                    <td>
+                                      <input type="password" class="formcontrol" id="ipassword4" placeholder="">
+                                    </td>
+                                    <td>
+                                      <input type="text" class="formcontrol" id="iregistrationno4" placeholder="">
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>
+                                      <input type="text" class="formcontrol" id="iname5" placeholder="">
+                                    </td>
+                                    <td>
+                                      <input type="text" class="formcontrol" id="ifathername5" placeholder="">
+                                    </td>
+                                    <td>
+                                      <input type="text" class="formcontrol" id="imothername5" placeholder="">
+                                    </td>
+                                    <td>
+                                      <input type="text" class="formcontrol" id="irollno5" placeholder="">
+                                    </td>
+                                    <td>
+                                      <input type="password" class="formcontrol" id="ipassword5" placeholder="">
+                                    </td>
+                                    <td>
+                                      <input type="text" class="formcontrol" id="iregistrationno5" placeholder="">
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                              <div class="form-group row">
+                                <div class="col-sm-10">
+                                  <button class="btn btn-primary" id="isubmit" onclick="validate();">Submit</button>
+                                   </div>
+                              </div>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </main>
+                
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>

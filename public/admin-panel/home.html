@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title> Index Page </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/style2.css" rel="stylesheet">
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="home.html">Department.js</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="home.html">Home</a>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown">Notices
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="assets/templates/noticecreation.html">Add New Notice</a>
+              </li>
+              <li>
+                <a href="assets/templates/notice.html">View all Notice</a>
+              </li>
+            </ul> 
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Students
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="http://slc.gndu.ac.in/StudentArea/Login.aspx" href="assets/templates/addnewbatch.html" target="_blank">Add a Batch</a>
+              </li>
+              <li>
+                <a href="assets/templates/feeconfirm.html">Add a Student</a>
+              </li>
+              <li>
+                <a href="#">Class-Wise List</a>
+              </li>
+              <li>
+                <a href="#">Edit Student Details</a>
+              </li>
+                <li>
+                  <a href="assets/templates/scholarshipdetails-form.html">Scholarship List</a>
+                </li>
+               <li>
+                 <a href="#">Sports List</a>
+               </li>
+               <li>
+                  <a href="assets/templates/jashandetail-form.html">Jashan List</a>
+                </li>
+            </ul>
+          </li>
+          <ul class="nav navbar-nav">
+            <li>
+            <a href="#">Links
+            </a>
+          </li>
+        </ul>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Teachers
+              <span class="caret"></span>
+           </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="assets/templates/addfaculty.html">Add a Teacher</a>
+              </li>
+              <li>
+                <a href="assets/templates/facultydetail.html">List Teachers</a>
+              </li>
+              <li>
+                <a href="assets/templates/teachonleave.html">Add Leave</a>
+              </li>
+              <li>
+                <a href="">Teachers Leave</a>
+              </li>
+            </ul>
+          </li>
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Time-Table
+              <span class="caret"></span>
+            </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="#">Teacher-wise</a>
+            </li>
+            <li>
+              <a href="#">Class-wise</a>
+            </li>
+            <li>
+              <a href="#">Update Time-table</a>
+            </li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Profile
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="#">Manage Details</a>
+            </li>
+           <li>
+             <a href="#">Change Secret Key</a>
+           </li>
+         </ul>
+       </li>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="assets/templates/sign-in.html">
+                LogOut<span class="fas fa-user"></span></a>
+            </li>
+          </ul>
+          </ul>
+      </div>
+      </div>
+  </nav>
+
+  <section id="team" class="section grey-section">
+    <div class="white-shape">
+      <div class="icon-container fixed border-radius">
+        <i class="fas fa-users"></i>
+      </div>
+    </div>
+    <div class="section-container">
+      <div class="container">
+        <div class="big-title">
+
+          <div class="border-title"></div>
+        </div>
+        <div class="container">
+          <div class="container" style="align-content: center;text-align: center;">
+            <h2>Welcome
+              <!-- <span id="nameLabel">Swaran Singh</span> -->
+            </h2>
+          </div>
+ 
+          </div>
+          <div class="container">
+            <h2>Simply Notices!</h2>
+            <table class="table">
+              <tr>
+                <td>
+                  <img id="notice1" src="assets/img/notice.jpg" height="250px" width="200px">
+                </td>
+                <td>
+                  <img id="notice2" src="assets/img/noticee2jpg.jpg" height="250px" width="200px">
+                </td>
+                <td>
+                  <img id="notice3" src="assets/img/notice3.jpg" height="250px" width="200px">
+                </td>
+              </tr>
+            </table>
+            <div align="right">
+              <a href="assets/templates/noticecreation.html"><button>Add a New Notice</button></a>
+            </div>
+
+          </div>
+
+          <div class="container">
+            <h2>Teachers on leave</h2>
+            <table class="table">
+              <tr>
+                <td>
+                  <label id="teacherLeave1" for="">Dr. ABCD</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label id="teacherLeave2" for="">Dr. MNOP</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label id="teacherLeave3" for="">Dr. WXYZ</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div align="right">
+                    <a href="assets/templates/teachonleave.html"><button>Add a Teacher on leave</button></a>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <h2> Follow Your Time Table </h2>
+
+          <table class="table table-hover" id="time">
+            <thead>
+              <tr>
+                <th>Timings/Day</th>
+                <th>9:00-10:00</th>
+                <th>10:00-11:00</th>
+                <th>11:00-12:00</th>
+                <th>12:00-1:00</th>
+                <th>1:00-2:00</th>
+                <th>2:00-3:00</th>
+                <th>3:00-4:00</th>
+                <th>4:00-5:00</th>
+                <th>Edit</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Monday</th>
+                <td>
+                  <label id="mon1">sub 1</label>
+                </td>
+                <td>
+                  <label id="mon2">sub 2</label>
+                </td>
+                <td>
+                  <label id="mon3">sub 3</label>
+                </td>
+                <td>
+                  <label id="mon4">sub 4</label>
+                </td>
+                <td>
+                  <label id="mon5">break</label>
+                </td>
+                <td>
+                  <label id="mon6">sub 5</label>
+                </td>
+                <td>
+                  <label id="mon7">sub 6</label>
+                </td>
+                <td>
+                  <label id="mon8">sub 7</label>
+                </td>
+                <td>
+                  <button type="submit" id="iedit">
+                    <a href="#">Edit</a>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <th>Tuesday</th>
+                <td>
+                  <label id="tues1">sub 1</label>
+                </td>
+                <td>
+                  <label id="tues2">sub 2</label>
+                </td>
+                <td>
+                  <label id="tues3">sub 3</label>
+                </td>
+                <td>
+                  <label id="tues4">sub 4</label>
+                </td>
+                <td>
+                  <label id="tues5">break</label>
+                </td>
+                <td>
+                  <label id="tues6">sub 5</label>
+                </td>
+                <td>
+                  <label id="tues7">sub 6</label>
+                </td>
+                <td>
+                  <label id="tues8">sub 7</label>
+                </td>
+                <td>
+                  <button type="submit" id="iedit">
+                    <a href="#">Edit</a>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <th>Wednesday</th>
+                <td>
+                  <label id="wed1">sub 1</label>
+                </td>
+                <td>
+                  <label id="wed2">sub 2</label>
+                </td>
+                <td>
+                  <label id="wed3">sub 3</label>
+                </td>
+                <td>
+                  <label id="wed4">sub 4</label>
+                </td>
+                <td>
+                  <label id="wed5">break</label>
+                </td>
+                <td>
+                  <label id="wed6">sub 5</label>
+                </td>
+                <td>
+                  <label id="wed7">sub 6</label>
+                </td>
+                <td>
+                  <label id="wed8">sub 7</label>
+                </td>
+                <td>
+                  <button type="submit" id="iedit">
+                    <a href="#">Edit</a>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <th>Thursday</th>
+                <td>
+                  <label id="thu1">sub 1</label>
+                </td>
+                <td>
+                  <label id="thu2">sub 2</label>
+                </td>
+                <td>
+                  <label id="thu3">sub 3</label>
+                </td>
+                <td>
+                  <label id="thu4">sub 4</label>
+                </td>
+                <td>
+                  <label id="thu5">break</label>
+                </td>
+                <td>
+                  <label id="thu6">sub 5</label>
+                </td>
+                <td>
+                  <label id="thu7">sub 6</label>
+                </td>
+                <td>
+                  <label id="thu8">sub 7</label>
+                </td>
+                <td>
+                  <button type="submit" id="iedit">
+                    <a href="#">Edit</a>
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <th>Friday</th>
+                <td>
+                  <label id="fri1">sub 1</label>
+                </td>
+                <td>
+                  <label id="fri2">sub 2</label>
+                </td>
+                <td>
+                  <label id="fri3">sub 3</label>
+                </td>
+                <td>
+                  <label id="fri4">sub 4</label>
+                </td>
+                <td>
+                  <label id="fri5">break</label>
+                </td>
+                <td>
+                  <label id="fri6">sub 5</label>
+                </td>
+                <td>
+                  <label id="fri7">sub 6</label>
+                </td>
+                <td>
+                  <label id="fri8">sub 7</label>
+                </td>
+                <td>
+                  <button type="submit" id="iedit">
+                    <a href="#">Edit</a>
+                  </button>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+</body>
+
+</html>

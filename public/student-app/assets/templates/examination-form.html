@@ -1,0 +1,391 @@
+<html>
+
+<head>
+  <title> Examination Form Page </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/style2.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/tableStyle.css">
+  <script src="../js/app.js"></script>
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/popper.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/examination-form.js"></script>
+  <script src="../js/local.js"></script>
+</head>
+
+<body onload="local(); load(); disableControls(); chkLink();">
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../../home.html">Department.js</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="../../home.html">Home</a>
+          </li>
+          <li>
+            <a href="notices.html">Notices</a>
+          </li>
+          <li class="dropdown active">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Forms
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="active">
+                <a href="examination-form.html">Examination Form</a>
+              </li>
+              <li>
+                <a href="scholarship-form.html">Scholarship Form</a>
+              </li>
+              <li>
+                <a href="sports-form.html">Sports Form</a>
+              </li>
+              <li>
+                <a href="jashan-form.html">Jashan Form</a>
+              </li>
+              <li>
+                  <a id="linkID" href="http://www.gnduadmissions.org/dhanpreet_idmay2017/idoddsem_index.asp" target="_blank">ID Courses</a>
+                </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Fee Collection
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a id="linkFee" href="http://slc.gndu.ac.in/StudentArea/Login.aspx" target="_blank">Generate Fee Slip</a>
+              </li>
+            </ul>
+          </li>
+          
+
+          <li>
+            <a href="syllabus.html">Syllabus</a>
+          </li>
+          <li>
+            <a href="messages.html">Messages</a>
+          </li>
+        </ul>
+
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">My Account
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="account.html">Edit Details</a>
+              </li>
+              <li>
+                <a href="changePassword.html">Change Password</a>
+              </li>
+            </ul>
+
+          </li>
+          <li style="padding-right: 10px">
+            <a href="sign-in.html" onclick="deLocal();">
+              <span class="glyphicon glyphicon-user"></span> Sign Out</a>
+          </li>
+        </ul>
+      </div>
+  </nav>
+  <!-- Page formatting code -->
+  <section id="team" class="section grey-section">
+    <div class="white-shape">
+      <div class="icon-container fixed border-radius">
+        <i class="fa fa-users"></i>
+      </div>
+    </div>
+    <div class="section-container">
+      <div class="container">
+        <div class="big-title">
+          <h3>
+            <span>EXAMINATION</span> Form</h3>
+          <div class="border-title"></div>
+        </div>
+        <!-- Page entries detail code -->
+        <div class="masonry-item col-md-6">
+          <div class="bgc-white p-20 bd">
+            <div class="mT-30">
+              <form>
+                <div class="form-group row">
+                  <label for="inputtext" class="col-sm-2 col-form-label">Registration No</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="regno" placeholder="">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputtext" class="col-sm-2 col-form-label">Roll No</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="rollno" placeholder="">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputtext" class="col-sm-2 col-form-label">Name</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="stuname" placeholder="">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputtext" class="col-sm-2 col-form-label">Gender</label>
+                  <div class="col-sm-10">
+                    <input type="radio" id="gender" name="Gender" checked> Male
+                    <br>
+                    <input type="radio" id="gender" name="Gender"> Female
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputtext" class="col-sm-2 col-form-label">Category</label>
+                  <div class="col-sm-10">
+                    <input type="radio" id="category" name="Category" checked> Gen
+                    <br>
+                    <input type="radio" id="category" name="Category"> SC/ST
+                    <br>
+                    <input type="radio" id="category" name="Category"> BC
+                    <br>
+                    <input type="radio" id="category" name="Category"> Others
+                    <br>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputtext" class="col-sm-2 col-form-label">Father Name</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="fathername" placeholder="">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputtext" class="col-sm-2 col-form-label">Mother Name</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="mothername" placeholder="">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputtext" class="col-sm-2 col-form-label">Address</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="address" placeholder="">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputtext" class="col-sm-2 col-form-label">Mobile No</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" id="mobno" placeholder="">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputtext" class="col-sm-2 col-form-label">City/Town</label>
+                  <div class="col-sm-10">
+                    <input type="radio" id="town" name="town" checked> Rural
+                    <br>
+                    <input type="radio" id="town" name="town"> Urban
+                    <br>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputtext" class="col-sm-2 col-form-label">Medium</label>
+                  <div class="col-sm-10">
+                    <input type="radio" id="medium" name="Medium" checked> English
+                    <br>
+                    <input type="radio" id="medium" name="Medium"> Punjabi
+                    <br>
+                    <input type="radio" id="medium" name="Medium"> Hindi
+                    <br>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputtext" class="col-sm-2 col-form-label">Exam Center</label>
+                  <div class="col-sm-5">
+                    <input type="text" class="form-control" id="examcenter" placeholder="">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="inputtext" class="col-sm-2 col-form-label">Exam Code</label>
+                  <div class="col-sm-5">
+                    <input type="text" class="form-control" id="examcode" placeholder="">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- Using data tables code -->
+        <main class="main-content bgc-grey-100">
+          <div id="mainContent">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="bgc-white bd bdrs-3 p-20 mB-20">
+                    <label for="inputtext" class="col-sm-2 col-form-label">Qualification Detail</label>
+                    <table id="dataTable" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                      <thead>
+                        <tr>
+                          <th>
+                            <b>class</b>
+                          </th>
+                          <th>
+                            <b>University Board</b>
+                          </th>
+                          <th>
+                            <b>Passing Year</b>
+                          </th>
+                          <th>
+                            <b>Marks</b>
+                          </th>
+                          <th>
+                            <b>Percentage</b>
+                          </th>
+                          <th>
+                            <b>Division</b>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <b>10th</b>
+                          </td>
+                          <td>-----</td>
+                          <td>----</td>
+                          <td>----</td>
+                          <td>-----</td>
+                          <td>------</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <b>12th</b>
+                          </td>
+                          <td>-----</td>
+                          <td>-----</td>
+                          <td>-----</td>
+                          <td>-----</td>
+                          <td>------</td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <b>Graduation</b>
+                          </td>
+                          <td>-----</td>
+                          <td>------</td>
+                          <td>------</td>
+                          <td>------</td>
+                          <td>------</td>
+                        </tr>
+                        
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <main class="main-content bgc-grey-100">
+          <div id="mainContent">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="bgc-white bd bdrs-3 p-20 mB-20">
+                    <label for="inputtext" class="col-sm-2 col-form-label">Subject Detail</label>
+                    <table id="dataTable" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                      <thead>
+                        <tr>
+                          <th>
+                            <b>Serial No</b>
+                          </th>
+                          <th>
+                            <b>Subject Name</b>
+                          </th>
+                          <th>
+                            <b>Subject Code</b>
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <b>1</b>
+                          </td>
+                          <td>
+                            <input type="text" class="form-control" id="subjectName1" placeholder="Subject Name">
+                          </td>
+                          <td>
+                            <input type="text" class="form-control" id="subjectCode1" placeholder="Subject Code">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <b>2</b>
+                          </td>
+                          <td>
+                            <input type="text" class="form-control" id="subjectName2" placeholder="Subject Name">
+                          </td>
+                          <td>
+                            <input type="text" class="form-control" id="subjectCode2" placeholder="Subject Code">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <b>3</b>
+                          </td>
+                          <td>
+                            <input type="text" class="form-control" id="subjectName3" placeholder="Subject Name">
+                          </td>
+                          <td>
+                            <input type="text" class="form-control" id="subjectCode3" placeholder="Subject Code">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <b>4</b>
+                          </td>
+                          <td>
+                            <input type="text" class="form-control" id="subjectName4" placeholder="Subject Name">
+                          </td>
+                          <td>
+                            <input type="text" class="form-control" id="subjectCode4" placeholder="Subject Code">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <b>5</b>
+                          </td>
+                          <td>
+                            <input type="text" class="form-control" id="subjectName5" placeholder="Subject Name">
+                          </td>
+                          <td>
+                            <input type="text" class="form-control" id="subjectCode5" placeholder="Subject Code">
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <div class="form-group row">
+            <div class="col-sm-10">
+              <button class="btn btn-primary" id="submit" onclick="validate();">Submit</button>
+              <button class="btn btn-primary" onclick="reset();">Clear</button>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
+
+</body>
+
+</html>

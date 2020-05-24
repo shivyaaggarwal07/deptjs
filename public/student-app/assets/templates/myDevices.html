@@ -1,0 +1,182 @@
+<html>
+
+<head>
+  <title> Syllabus</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="../css/style2.css">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/tableStyle.css">
+
+  <script src="../js/app.js"></script>
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/popper.min.js"></script>
+<script src="../js/local.js"></script>
+</head>
+
+<body onload="local(); chkLink();">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../../home.html">GNDU eStudante</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li>
+                <a href="../../home.html">Home</a>
+              </li>
+              <li>
+                <a href="notices.html">Notices</a>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Forms
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="examination-form.html">Examination Form</a>
+                  </li>
+                  <li>
+                    <a href="scholarship-form.html">Scholarship Form</a>
+                  </li>
+                  <li>
+                    <a href="sports-form.html">Sports Form</a>
+                  </li>
+                  <li>
+                    <a href="jashan-form.html">Jashan Form</a>
+                  </li>
+                  <li>
+                    <a id="linkID" href="http://www.gnduadmissions.org/dhanpreet_idmay2017/idoddsem_index.asp" target="_blank">ID Courses</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Fee Collection
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a id="linkFee" href="http://slc.gndu.ac.in/StudentArea/Login.aspx" target="_blank">Generate Fee Slip</a>
+                  </li>
+                  
+                </ul>
+              </li>
+              
+    
+    
+              <li class="active">
+                <a href="syllabus.html">Syllabus</a>
+              </li>
+              <li>
+                <a href="messages.html">Messages</a>
+              </li>
+            </ul>
+    
+    
+    
+    
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">My Account
+                  <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="account.html">Edit Details</a>
+                  </li>
+                  <li>
+                    <a href="changePassword.html">Change Password</a>
+                  </li>
+                </ul>
+    
+              </li>
+              <li style="padding-right: 10px">
+                <a href="sign-in.html" onclick="deLocal();">
+                  <span class="glyphicon glyphicon-user"></span> Sign Out</a>
+              </li>
+            </ul>
+          </div>
+      </nav>
+
+  <section id="team" class="section grey-section">
+    <div class="white-shape">
+      <div class="icon-container fixed border-radius">
+        <i class="fa fa-users"></i>
+      </div>
+    </div>
+    <div class="section-container">
+      <div class="container">
+        <main class="main-content bgc-grey-100">
+            <div id="mainContent">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="bgc-white bd bdrs-3 p-20 mB-20">
+                      <label for="inputtext" class="col-sm-6 col-form-label"><span style="font-size: 20px">Devices you are currently logged in from</span></label>
+                      <table id="dataTable" class="table table-striped " cellspacing="0" width="50%">
+                          <br><br><br><br>
+                        <thead>
+                          <tr>
+                            <th>
+                              <b>Sr. No</b>
+                            </th>
+                            <th>
+                              <b>IP Address</b>
+                            </th>
+                            <th>
+                              <b>Last Login on</b>
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <b>1</b>
+                            </td>
+                            <td><label for="" id="IP1"></label></td>
+                            <td><label  for="" id="time1"></label></td>
+                            
+                          </tr>
+                          <tr>
+                            <td>
+                              <b>2</b>
+                            </td>
+                            <td><label for="" id="IP2"></label></td>
+                            <td><label  for="" id="time2"></label></td>
+                            
+                          </tr>
+                          <tr>
+                            <td>
+                              <b>3</b>
+                            </td>
+                            <td><label for="" id="IP3"></label></td>
+                            <td><label  for="" id="time3"></label></td>
+                            
+                          </tr>
+                          
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </main>
+
+
+
+
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

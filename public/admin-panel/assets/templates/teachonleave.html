@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title> Teacher on leave </title>
+        <link href="../css/style.css" rel="stylesheet">
+        <link href="../css/style2.css" rel="stylesheet">
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <script src="../js/app.js"></script>
+        <script src="../js/teachonleave.js"></script>
+    </head>
+
+    <body>
+        <!-- Page formatting code -->
+        <section id="team" class="section grey-section">
+            <div class="white-shape">
+                <div class="icon-container fixed border-radius">
+                    <i class="fa fa-users"></i>
+                </div>
+            </div>
+            <div class="section-container">
+                <div class="container">
+                    <div class="big-title">
+                        <h3>
+                            <span>teacher on leave</span> </h3>
+                        <div class="border-title"></div>
+                    </div>
+
+                 <!-- dropdown menu code -->
+                <div class="form-group col-md-2">
+                    <label for="inputState">Select Teacher</label>
+                    <select id="iselectTeacher" class="form-control">
+                      <option selected="selected">Choose...</option>
+                      <option>Sandeep Kaur</option>
+                      <option>Hardeep Singh</option>
+                      <option>Satveer Kaur</option>
+                      <option>Satinder Kaur</option>
+                      <option>R.V.D.Singh</option>
+                      <option>Gurpreet Singh</option>
+                    </select>
+                  </div>  
+                  <div class="form-group col-md-2">
+                    <label for="inputState">Select Date</label>
+                    <select id="iselectDate" class="form-control">
+                      <option selected="selected">Choose...</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      <option>6</option>
+                    </select>
+                  </div>                              
+                  <div class="form-group row">
+                    <div class="col-sm-10">
+                        <button type="submit" class="btn btn-primary" id="isubmit" onclick="validate();">Submit</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        
+    </body>
+</html>

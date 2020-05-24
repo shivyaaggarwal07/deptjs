@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <title> Notice Creation </title>
+   <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/style2.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <script src="../js/app.js"></script>
+    <script src="../js/noticecreation.js"></script>
+</head>
+
+<body style="background: #5433FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+">
+
+    <!-- Page formatting code -->
+    <section id="team" class="section grey-section">
+        <div class="white-shape">
+            <div class="icon-container fixed border-radius">
+                <i class="fa fa-users"></i>
+            </div>
+        </div>
+        <div class="section-container">
+            <div class="container">
+                <div class="big-title">
+                    <h3>
+                        <span style="text-shadow: 2px 2px 4px black">Add a New Notice</span>
+                    </h3>
+                    <div class="border-title"></div>
+                </div>
+
+                <div class="masonry-item col-md-6">
+                    <div class="bgc-white p-20 bd">
+                        <div class="mT-30">
+                            <form>
+                                <div class="form-group row">
+                                    <label for="inputtext" class="col-sm-3 col-form-label">Notice Heading</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="inoticeHeading" placeholder="">
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group-row">
+                                    <label for="inputtext" class="col-sm-3 col-form-label">Upload Image</label>
+                                    <div class="col-sm-9">
+                                        <input type="file" class="form-control" id="iuploadImage" placeholder="">
+                                    </div>
+                                </div>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <div class="form-group row">
+                                    <label for="inputtext" class="col-sm-2 col-form-label">Validity</label>
+                                    <div class="col-sm-10">
+                                        <input class="form-check-input" type="radio" name="Validity" id="ivalidity"> 1 Day
+                                        <br>
+                                        <input class="form-check-input" type="radio" name="Validity" id="ivalidity"> 1 Week
+                                        <br>
+                                        <input class="form-check-input" type="radio" name="Validity" id="ivalidity"> 1 Month
+                                        <br>
+                                        <input class="form-check-input" type="radio" name="Validity" id="ivalidity"> 6 Month
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <button type="submit" class="btn btn-primary" id="iupload" onclick="validate();">Upload</button>
+                        <button type="submit" class="btn btn-primary" id="icancle">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>

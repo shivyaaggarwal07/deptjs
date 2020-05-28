@@ -1,0 +1,71 @@
+<html>
+
+<head>
+    <title> Students Left </title>
+    <!-- <link rel="import" href="navbar.html"> -->
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/style2.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <script src="../js/app.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+
+<body>
+
+    <!-- Page formatting code -->
+    <section id="team" class="section grey-section">
+        <div class="white-shape">
+            <div class="icon-container fixed border-radius">
+                <i class="fas fa-users" style="margin-left:10%;"></i>
+            </div>
+        </div>
+        <div class="section-container">
+            <div class="container">
+                <div class="big-title">
+                    <h3>
+                        <span style="text-shadow: 2px 2px 3px blue">List of Students Left</span>
+                    </h3>
+                    <div class="border-title"></div>
+                </div>
+
+                <div class="masonry-item col-md-6">
+                    <div class="bgc-white p-20 bd">
+                        <div class="mT-30">
+                            <form>
+                                <div class="form-group row">
+                                    <label for="inputtext" class="col-sm-3 col-form-label">Course</label>
+                                    <div class="col-sm-9">
+                                        <input type="checkbox"  id="ifyic" placeholder="Kindly Type the Batch">MCA(FYIC)<br>
+                                       <input type="checkbox"  id="ityc" placeholder="Kindly Type the Batch">MCA(TYC)   
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group row">
+                                    <label for="inputtext" class="col-sm-3 col-form-label">Batch</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="ibatch" placeholder="Enter Batch ">
+                                    </div>
+                                </div>
+                                <div class="form-group-row">
+                                    <label for="inputtext" class="col-sm-3 col-form-label"></label>
+                                    <div class="col-sm-9">
+                                    <p id = "demo"></p>
+                                </div>
+                            </div>
+
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <button type="submit" class="btn btn-primary" id="isubmit" onclick="valid();">Submit</button>
+                        <button type="submit" class="btn btn-primary" id="icancle">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="../js/classwiselist.js"></script>
+
+</body>
+
+</html>

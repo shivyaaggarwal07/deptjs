@@ -14,7 +14,7 @@
 
 <body>
 
-  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <nav class="navbar navbar-inverse navbar-fixed-Top">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -22,72 +22,119 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="../../home.html">Department.js</a>
+        <a class="navbar-brand" href="home.html">Department.js</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
           <li>
-            <a href="../../home.html">Home</a>
+            <a href="home.html">Home</a>
+          </li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown">Notices
+              <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="assets/templates/noticecreation.html">Add New Notice</a>
+              </li>
+              <li>
+                <a href="assets/templates/ViewNotices.html">View all Notice</a>
+              </li>
+            </ul> 
           </li>
           <li class="dropdown active">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Forms
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Students
               <span class="caret"></span>
             </a>
             <ul class="dropdown-menu">
+              <li>
+                <a href="http://slc.gndu.ac.in/StudentArea/Login.aspx" href="assets/templates/addnewbatch.html" target="_blank">Add a Batch</a>
+              </li>
               <li class="active">
-                <a href="gendata-form.html">General Detail</a>
+                <a href="assets/templates/gendata-form.html">Add a Student</a>
               </li>
               <li>
-                <a href="placement-form.html">Placement Form</a>
+                <a href="assets/templates/ClassWiseList.html">Class-Wise List</a>
               </li>
               <li>
-                <a href="examination-form.html">Examination Form</a>
+                <a href="assets/templates/studentsleft.html">Students Left</a>
               </li>
               <li>
-                <a href="scholarship-form.html">Scholarship Form</a>
+                <a href="#">Edit Student Details</a>
               </li>
-              <li>
-                <a href="sports-form.html">Sports Form</a>
-              </li>
-              <li>
-                <a href="jashan-form.html">Jashan Form</a>
-              </li>
-              <li>
-                <a href="http://www.gnduadmissions.org/dhanpreet_idmay2017/idoddsem_index.asp" target="_blank">ID Courses</a>
-              </li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Fee Collection
-              <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu">
-              <li>
-                <a href="http://slc.gndu.ac.in/StudentArea/Login.aspx" target="_blank">Generate Fee Slip</a>
-              </li>
-              <li>
-                <a href="feeconfirm.html">Verify Payment</a>
-              </li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Faculty List
-              <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu">
-              <li>
-                <a href="facultydetail.html">Professors</a>
-              </li>
-              <li>
-                <a href="facultydetail.html">Research Scholars</a>
-              </li>
+                <li>
+                  <a href="assets/templates/scholarshipdetails-form.html">Scholarship List</a>
+                </li>
+               <li>
+                 <a href="#">Sports List</a>
+               </li>
+               <li>
+                  <a href="assets/templates/jashandetail-form.html">Jashan List</a>
+                </li>
             </ul>
           </li>
           <ul class="nav navbar-nav">
             <li>
-              <a href="#">Syllabus</a>
+            <a href="assets/templates/links.html">Links
+            </a>
+          </li>
+        </ul>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Teachers
+              <span class="caret"></span>
+           </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="assets/templates/addfaculty.html">Add a Teacher</a>
+              </li>
+              <li>
+                <a href="assets/templates/facultydetail.html">List Teachers</a>
+              </li>
+              <li>
+                <a href="assets/templates/teachonleave.html">Add Leave</a>
+              </li>
+              <li>
+                <a href="">Teachers Leave</a>
+              </li>
+            </ul>
+          </li>
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Time-Table
+              <span class="caret"></span>
+            </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="assets/templates/teacherwisett.html">Teacher-wise</a>
+            </li>
+            <li>
+              <a href="assets/templates/classwisett.html">Class-wise</a>
+            </li>
+            <li>
+              <a href="#">Update Time-table</a>
             </li>
           </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Profile
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="../student-app/assets/templates/account.html">Manage Details</a>
+            </li>
+           <li>
+             <a href="../student-app/assets/templates/changePassword.html">Change Secret Key</a>
+           </li>
+         </ul>
+       </li>
+          <ul class="nav navbar-nav navbar-right">
+            <li style="margin-right: -50%">
+              <a href="assets/templates/sign-in.html">
+                <span class="fas fa-user"></span>LogOut</a>
+            </li>
+          </ul>
+          </ul>
+      </div>
       </div>
   </nav>
 
@@ -102,7 +149,7 @@
       <div class="container">
         <div class="big-title">
           <h3>
-            <span>GENERAL</span> Detail</h3>
+            <span style="margin-top:13px">GENERAL</span> Detail</h3>
           <div class="border-title"></div>
         </div>
         <!-- Page data enteries code -->

@@ -1,0 +1,59 @@
+<html>
+<head>
+	<title>Class-Wise TT</title>
+	 <style>
+    </style>
+<link rel="stylesheet" href="../css/style.css">
+ <link href="../css/style2.css" rel="stylesheet">
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+<script src="../js/app.js"></script>
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="../js/popper.min.js"></script>
+	</head>
+	<body>
+		<h1 id="bgtext"></h1>
+		<section id="team" class="section grey-section">
+        <div class="white-shape">
+            <div class="icon-container fixed border-radius">
+                <i class="fas fa-users" style="margin-left:10%;"></i>
+            </div>
+        </div>
+ <div class="section-container">
+            <div class="container">
+                <div class="big-title">
+			<h3><span>Class-Wise Time Table</span></h3>
+		</div>
+		<form class="form-group">
+			<label>Kindly select your Class and then the semester</label><br>
+			<input type="checkbox" id="fyicchecked" onclick="checking();">MCA(FYIC)
+			<select id="fyicselected" style="display:none">	
+				<option id="bigtext">Semester1</option>
+				<option>Semester2</option>
+				<option>Semester3</option>
+				<option>Semester4</option>
+				<option>Semester5</option>
+				<option>Semester6</option>
+				<option>Semester7</option>
+				<option>Semester8</option>
+				<option>Semester9</option>
+				<option>Semester10</option>
+				<option>Semester11</option>
+			</select>
+	     	<br><br>
+			<input type="checkbox" id="tycchecked" onclick="checking();">MCA(TYC)
+			<select id="tycselected" style="display:none;">
+				<option>Semester1</option>
+				<option>Semester2</option>
+				<option>Semester3</option>
+				<option>Semester4</option>
+				<option>Semester5</option>
+				<option>Semester6</option>
+			</select>
+		</form>
+	</div>
+</div>
+</section>
+<script type="text/javascript" src="../js/classwisett.js"></script>
+	</body>
+</html>

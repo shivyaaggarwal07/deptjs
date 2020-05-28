@@ -39,8 +39,8 @@ function validate(){
     }
     var formData={
         "Minority":minority,
-        "Income Certificate":incomeCertificate.value,
-        "Residence Certificate":residenceCertificate.value,
+        "Income":income.value,
+        "Residence":residence.value,
         "Concession":concession
     }
     firebase.database().ref('gndu-amritsar/student' + rollNo.value + '/documents').set(formData).then(function(){

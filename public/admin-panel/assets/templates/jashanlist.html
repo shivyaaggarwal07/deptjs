@@ -1,0 +1,205 @@
+<html>
+
+<head>
+    <title> Jashan Detail </title>
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/style2.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" src="../js/app.js"></script>
+    <script type="text/javascript" src="../js/jashanlist.js"></script>
+</head>
+
+<body>
+    <!-- Page formatting code -->
+    <section id="team" class="section grey-section">
+        <div class="white-shape">
+            <div class="icon-container fixed border-radius">
+                <i class="fa fa-users"></i>
+            </div>
+        </div>
+        <div class="section-container">
+            <div class="container">
+                <div class="big-title">
+                    <h3>
+                        <span>Jashan Events List</span>
+                    </h3>
+                    <div class="border-title"></div>
+                </div>
+                
+                <!-- Using data tables code -->
+                <main class="main-content bgc-grey-100">
+                    <div id="mainContent">
+                        <div class="container-fluid">
+                                        <select style="height:4%;border-radius:3px" id="event" onchange = "myfunction();">Choose Event
+                                            <option value="Dance" id="bhangraa">Dance</option>
+                                                <!-- <option value="2">Giddha</option> -->
+                                                    <option value="Painting">Painting</option>
+                                                        <option value="Quiz">Quiz</option>
+                                                            <option value="Debate">Debate</option>
+                                                                <option value="Cultural">Cultural</option>
+                                                                <option value="Singing">Singing</option>
+                                                                <option value="Literary">Literary</option>
+                                        </select>
+                                        <br><br>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="bgc-white bd bdrs-3 p-20 mB-20">
+                                        <label for="inputtext" class="col-sm-2 col-form-label">Jashan Details</label>
+                                        <table id="dataTable" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                                            <thead>
+                                                <tr>
+                                                    <th>
+                                                        <b>Name</b>
+                                                    </th>
+                                                    <th>
+                                                        <b>Roll No</b>
+                                                    </th>
+                                                    <th>
+                                                        <b>Class</b>
+                                                    </th>
+<!--                                                     <th>
+                                                        <b>Minority</b>
+                                                    </th>
+                                                    <th>
+                                                        <b>Income Certificate</b>
+                                                    </th>
+                                                    <th>
+                                                        <b>Residence Certificate</b>
+                                                    </th>
+                                                    <th>
+                                                        <b>Fee Concession</b>
+                                                    </th> -->
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <input type="text" class="formcontrol" id="iname" placeholder="">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="formcontrol" id="irollno" placeholder="">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="formcontrol" id="iclass" placeholder="">
+                                                    </td>
+                                                    <!-- <td>
+                                                        <input type="text" class="formcontrol" id="imaniority" placeholder="">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="formcontrol" id="iincome" placeholder="">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="formcontrol" id="iresidence" placeholder="">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="formcontrol" id="ifeeconcession" placeholder="">
+                                                    </td> -->
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <input type="text" class="formcontrol" id="iname" placeholder="">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="formcontrol" id="irollno" placeholder="">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="formcontrol" id="iclass" placeholder="">
+                                                    </td>
+<!--                                                     <td>
+                                                        <input type="text" class="formcontrol" id="imaniority" placeholder="">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="formcontrol" id="iincome" placeholder="">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="formcontrol" id="iresidence" placeholder="">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="formcontrol" id="ifeeconcession" placeholder="">
+                                                    </td> -->
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <input type="text" class="formcontrol" id="iname" placeholder="">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="formcontrol" id="irollno" placeholder="">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="formcontrol" id="iclass" placeholder="">
+                                                    </td>
+                                                   <!--  <td>
+                                                        <input type="text" class="formcontrol" id="imaniority" placeholder="">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="formcontrol" id="iincome" placeholder="">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="formcontrol" id="iresidence" placeholder="">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="formcontrol" id="ifeeconcession" placeholder="">
+                                                    </td> -->
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <input type="text" class="formcontrol" id="iname" placeholder="">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="formcontrol" id="irollno" placeholder="">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="formcontrol" id="iclass" placeholder="">
+                                                    </td>
+                                                   <!--  <td>
+                                                        <input type="text" class="formcontrol" id="imaniority" placeholder="">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="formcontrol" id="iincome" placeholder="">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="formcontrol" id="iresidence" placeholder="">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="formcontrol" id="ifeeconcession" placeholder="">
+                                                    </td> -->
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <input type="text" class="formcontrol" id="iname" placeholder="">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="formcontrol" id="irollno" placeholder="">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="formcontrol" id="iclass" placeholder="">
+                                                    </td>
+<!--                                                     <td>
+                                                        <input type="text" class="formcontrol" id="imaniority" placeholder="">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="formcontrol" id="iincome" placeholder="">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="formcontrol" id="iresidence" placeholder="">
+                                                    </td>
+                                                    <td>
+                                                        <input type="text" class="formcontrol" id="ifeeconcession" placeholder="">
+                                                    </td> -->
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>

@@ -1,7 +1,13 @@
 function validate(){
+    var rollno = document.getElementById("RollNo")
     var oldPassword = document.getElementById("oldpassword")
     var newPassword = document.getElementById("newpassword")
     var confirmPassword = document.getElementById("confirmpassword")
+    if(rollno.value=="")
+    {
+        alert("Enter your roll no");
+        return;
+    }
     if(oldPassword.value===""){
         alert("Please enter your old Password"); return;
     }
@@ -17,4 +23,9 @@ function validate(){
     if(newPassword.value===oldPassword.value){
         alert("New Password cannot be same as old Passowrd"); return;
     }
+    var passworddata = confirmPassword.value;
+    firebase.database().ref.child('gndu-amritsar/student/' + rollno.value + 'password').set(passworddata).then(function(){
+        alert("You have successfully changed your password");
+        alert("Your New Password is"+ newPassword.value);
+    })
 }

@@ -44,5 +44,21 @@ function validate() {
     };
     firebase.database().ref('gndu-amritsar/Scholarship/' + rollNo.value).set(formData).then(function(){
             alert("You have successfully filled the Scholarship Form! You will get the response of the application soon.");
+            cancelButton.disabled=true;
     });
+}
+function reset()
+{
+    var name = document.getElementById("iname");
+    var rollNo = document.getElementById("irollno");
+    var sclass = document.getElementById("iclass");
+    var incomeCertificate = document.getElementById("iincome");
+    var residenceCertificate = document.getElementById("iresidence");
+
+
+    name.value="";
+    rollNo.value="";
+    sclass.value="";
+    incomeCertificatex.length="";
+    residenceCertificate="";
 }

@@ -9,7 +9,10 @@
     <script type="text/javascript" src="../js/jashanlist.js"></script>
 </head>
 
-<body>
+<body onload="myfunction();" style="background: #abbaab;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ffffff, #abbaab);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+">
     <!-- Page formatting code -->
     <section id="team" class="section grey-section">
         <div class="white-shape">
@@ -21,7 +24,7 @@
             <div class="container">
                 <div class="big-title">
                     <h3>
-                        <span>Jashan Events List</span>
+                        <span>JASHAN EVENTS LIST</span>
                     </h3>
                     <div class="border-title"></div>
                 </div>
@@ -30,7 +33,8 @@
                 <main class="main-content bgc-grey-100">
                     <div id="mainContent">
                         <div class="container-fluid">
-                                        <select style="height:4%;border-radius:3px" id="event" onchange = "myfunction();">Choose Event
+                                        <select style="height:4%;border-radius:3px" id="event">Choose Event
+                                            <option value="" disabled selected>Select an Event</option>
                                             <option value="Dance" id="bhangraa">Dance</option>
                                                 <!-- <option value="2">Giddha</option> -->
                                                     <option value="Painting">Painting</option>

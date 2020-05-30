@@ -15,7 +15,8 @@
   <script src="../js/local.js"></script>
 </head>
 
-<body onload="local(); load(); disableControls(); chkLink();">
+<!-- <body onload="local(); load(); disableControls(); chkLink();"> -->
+  <body>
   <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid">
       <div class="navbar-header">
@@ -24,7 +25,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="../../home.html">GNDU eStudante</a>
+        <a class="navbar-brand" href="../../home.html">Department.JS</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
@@ -39,9 +40,9 @@
               <span class="caret"></span>
             </a>
             <ul class="dropdown-menu">
-              <li>
+<!--               <li>
                 <a href="examination-form.html">Examination Form</a>
-              </li>
+              </li> -->
               <li>
                 <a href="scholarship-form.html">Scholarship Form</a>
               </li>
@@ -80,7 +81,7 @@
 
         <ul class="nav navbar-nav navbar-right">
           <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">My Account
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Profile
               <span class="caret"></span>
             </a>
             <ul class="dropdown-menu">
@@ -95,7 +96,7 @@
           </li>
           <li style="padding-right: 10px">
             <a href="sign-in.html" onclick="deLocal();">
-              <span class="glyphicon glyphicon-user"></span> Sign Out</a>
+              <span class="glyphicon glyphicon-user"></span> LogOut</a>
           </li>
         </ul>
       </div>
@@ -140,15 +141,19 @@
                 <div class="form-group row">
                   <label for="inputtext" class="col-sm-2 col-form-label">Event</label>
                   <div class="col-sm-10" id="event">
-                    <input id="event1" type="checkbox"> Bhangra
+                    <input id="event1" type="checkbox"> Dance
                     <br>
-                    <input id="event2" type="checkbox"> Rangoli
+                    <input id="event2" type="checkbox"> Painting
                     <br>
-                    <input id="event3" type="checkbox"> Quiz
+                    <input id="event3" type="checkbox"> Acting
                     <br>
-                    <input id="event4" type="checkbox"> Painting
+                    <input id="event4" type="checkbox"> Quiz
                     <br>
-                    <input id="event5" type="checkbox"> Gidha
+                    <input id="event5" type="checkbox"> Literary
+                    <br>
+                    <input id="event6" type="checkbox"> Cultural
+                    <br>
+                    <input id="event7" type="checkbox"> Singing
                     <br>
                   </div>
                 </div>

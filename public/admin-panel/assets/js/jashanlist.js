@@ -1,19 +1,14 @@
+function myfunction()
+{
+	var data={};
+var selectevent = document.getElementById("event").value;
 var name=document.getElementById("iname");
 var rollno = document.getElementById("irollno");
 var clas = document.getElementById("iclass");
-// var option = select.options[select.selectedIndex];
-// if(option.id =="bhangra")
-// {
-// 	document.getElementById("iname").value = option.text;
-// }
-// select.onchange=function()
-// {
-// // name.value=select.value;
-// }
-function myfunction()
+if(selectevent.selectedIndex="0")
 {
-var select = document.getElementById("event").value;
-	var data={};
+	alert("Kindly select an event");
+}
 	firebase.database().ref().child('jashan/Dance').once('value',function(snapshot){
 		data=snapshot.val();
 		// var bhangra = document.getElementById("event");

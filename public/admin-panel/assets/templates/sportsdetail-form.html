@@ -8,7 +8,10 @@
      <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 
-<body>
+<body style="background: #abbaab;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #ffffff, #abbaab);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+">
     <!-- Page formatting code -->
     <section id="team" class="section grey-section">
         <div class="white-shape">
@@ -20,7 +23,7 @@
             <div class="container">
                 <div class="big-title">
                     <h3>
-                        <span>sports form</span>
+                        <span>SPORTS FORM DETAILS</span>
                     </h3>
                     <div class="border-title"></div>
                 </div>
@@ -29,7 +32,7 @@
                     <label for="inputState">Select sports</label>
                     <select id="inputState" class="form-control">
 <!--                        <option selected="selected">Choose...</option>-->
-                        <option value=""></option>
+                        <option value="" disabled selected>Select an Event</option>
                         <option>Cricket</option>
                         <option>Badminton</option>
                         <option>Table Tennis</option>

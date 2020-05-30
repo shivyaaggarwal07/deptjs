@@ -84,11 +84,11 @@ var submitButton = document.getElementById("isubmit");
     var formData = {
                     "name" : name.value,
                     "rollNo" : rollno.value,
-                    "jclass" : jclass.value,
-                    "events" : eventsArray
-                   
+                    "jclass" : jclass.value
     };
-    firebase.database().ref('jashan/' + rollno.value).set(formData).then(function(){
+    firebase.database().ref('jashan/' + event1.value + '/' + rollno.value).set(formData).then(function(){
+        firebase.database().ref('students/' +rollno.value+'jashan/'+ event1.value).set(event1.value).then(function(){
+        });
         alert("You have succesfully filled jashan form.");
         submitButton.disabled=true;
     }); 

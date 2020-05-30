@@ -14,7 +14,7 @@
 
 <body>
 
-<nav class="navbar navbar-inverse navbar-fixed-Top">
+<nav class="navbar navbar-inverse ">
     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -191,9 +191,9 @@
                                 <div class="form-group row">
                                     <label for="inputtext" class="col-sm-2 col-form-label">Minority</label>
                                     <div class="col-sm-10">
-                                        <input class="form-check-input" type="radio" name="Minority" id="iminority" checked> Sikh
+                                        <input class="form-check-input" type="radio" name="Minority" id="iminority"> Sikh
                                         <br>
-                                        <input class="form-check-input" type="radio" name="Minority" id="iminority"> Hindu
+                                        <input class="form-check-input" type="radio" name="Minority" id="iminority" checked> Hindu
                                         <br>
                                         <input class="form-check-input" type="radio" name="Minority" id="iminority"> Muslim
                                         <br>
@@ -204,13 +204,13 @@
                                 <div class="form-group row">
                                     <label for="inputtext" class="col-sm-2 col-form-label">Income Certificate</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="iincome" placeholder="">
+                                        <input type="file"  id="iincome" placeholder="Kindly Upload your income certificate">
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label for="inputtext" class="col-sm-2 col-form-label">Residence Certificate</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="iresidence" placeholder="">
+                                        <input type="file"  id="iresidence" placeholder="Kindly Upload your Residence Certificate">
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -228,7 +228,7 @@
                 <div class="form-group row">
                     <div class="col-sm-10">
                         <button type="submit" class="btn btn-primary" id="isubmit" onclick="validate();">Submit</button>
-                        <button type="submit" class="btn btn-primary" id="icancle">Cancel</button>
+                        <button type="submit" class="btn btn-primary" id="icancle" onclick="reset();">Reset</button>
                     </div>
                 </div>
 

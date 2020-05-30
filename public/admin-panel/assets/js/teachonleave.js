@@ -2,12 +2,17 @@ function validate() {
     var selectTeacher = document.getElementById("iselectTeacher");
     var selectDate = document.getElementById("iselectDate");
     var submitButton = document.getElementById("isubmit");
-    if(selectTeacher.selectedIndex=="0")
+    // if(selectTeacher.selectedIndex=="0")
+    // {
+    //     alert("please select a teacher");
+    //     return;
+    // }
+    if(selectTeacher.value="")
     {
-        alert("please select a teacher");
+        alert("Enter your name");
         return;
     }
-    if(selectDate.selectedIndex=="0")
+    if(selectDate.value=="")
     {
         alert("please select a date");
         return;

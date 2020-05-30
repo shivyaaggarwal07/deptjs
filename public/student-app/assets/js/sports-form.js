@@ -19,6 +19,7 @@ function disableControls(){
 
 
 function validate(){
+    var gamesArray=[];
     var stuName = document.getElementById("stuname")
     var rollNo = document.getElementById("rollno")
     var dob = document.getElementById("dob")
@@ -34,6 +35,14 @@ function validate(){
     var game7 = document.getElementById("game7")
     var game8 = document.getElementById("game8")
     var game9 = document.getElementById("game9")
+    var formData={
+        "name":stuName.value,
+        "rollno":rollNo.value,
+        "gender":gender.value,
+        "mobNo":mobNo.value,
+        "emailID":emailID.value,
+        // "game":gamesArray.value
+    }
     if(stuName.value===""){
         alert("Enter your Name"); return;
     }
@@ -52,10 +61,45 @@ function validate(){
     if(game1.checked==false && game2.checked==false && game3.checked==false && game4.checked==false && game5.checked==false && game6.checked==false && game7.checked==false && game8.checked==false && game9.checked==false){
         alert("Please select atleast one game"); return;
     }
-
-    firebase.database().ref('gndu-amritsar/miscellaneous/' + game.value + '/' + rollNo.value).push(formData).then(function(){
+    if(game1.checked==true)
+    {
+        gamesArray.push("Cricket")
+    firebase.database().ref('gndu-amritsar/student/miscellaneous/' + game1.value + '/' + rollNo.value).push(formData).then(function(){
         alert("You have succesfully applied for sports.");
         document.getElementById("submit").disabled=true;
     })
+    }
+     if(game2.checked==true)
+    {
+        gamesArray.push("Badminton")
+    }
+    if(game3.checked==true)
+    {
+        gamesArray.push("Table Tennis")
+    }
+    if(game4.checked==true)
+    {
+        gamesArray.push("Lawn Tennis")
+    }
+     if(game5.checked==true)
+    {
+        gamesArray.push("Handball")
+    }
+    if(game6.checked==true)
+    {
+        gamesArray.push("Basketball")
+    }
+    if(game7.checked==true)
+    {
+        gamesArray.push("Football")
+    }
+    if(game8.checked==true)
+    {
+        gamesArray.push("Carrom")
+    }
+    if(game1.checked==true)
+    {
+        gamesArray.push("Hockey")
+    }
 }
 

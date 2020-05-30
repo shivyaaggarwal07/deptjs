@@ -14,7 +14,7 @@
     <script src="../js/local.js"></script>
 </head>
 
-<body onload="local(); load(); disableControls(); chkLink();">
+<body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -38,9 +38,9 @@
                             <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
-                            <li>
+<!--                             <li>
                                 <a href="examination-form.html">Examination Form</a>
-                            </li>
+                            </li> -->
                             <li class="active">
                                 <a href="scholarship-form.html">Scholarship Form</a>
                             </li>
@@ -78,7 +78,7 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">My Account
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Profile
                             <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
@@ -151,9 +151,9 @@
                                 <div class="form-group row">
                                     <label for="inputtext" class="col-sm-2 col-form-label">Minority</label>
                                     <div class="col-sm-10">
-                                        <input type="radio" id="minority" name="Minority" checked> Sikh
+                                        <input type="radio" id="minority" name="Minority"> Sikh
                                         <br>
-                                        <input type="radio" id="minority" name="Minority"> Hindu
+                                        <input type="radio" id="minority" name="Minority" checked> Hindu
                                         <br>
                                         <input type="radio" id="minority" name="Minority"> Muslim
                                         <br>
@@ -162,15 +162,15 @@
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="inputtext" class="col-sm-2 col-form-label">Gross Annual Family Income</label>
+                                    <label for="inputtext" class="col-sm-2 col-form-label">Income Certificate</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="income" placeholder="">
+                                        <input type="file" id="income" placeholder="">
                                     </div>
                                 </div>
                                 <div class="form-group row">
-                                    <label for="inputtext" class="col-sm-2 col-form-label">Address</label>
+                                    <label for="inputtext" class="col-sm-2 col-form-label">Residence Certicate</label>
                                     <div class="col-sm-10">
-                                        <input type="text" class="form-control" id="residence" placeholder="">
+                                        <input type="file" id="residence" placeholder="">
                                     </div>
                                 </div>
                                 <div class="form-group row">

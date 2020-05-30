@@ -35,14 +35,14 @@ function validate(){
     if(rollNo.value===""){
         alert("Enter your Roll No"); return;
     }
-    if(event1.checked==false || event2.checked==false || event3.checked==false || event4.checked==false || event5.checked==false){
+    if(event1.checked==false && event2.checked==false && event3.checked==false && event4.checked==false && event5.checked==false){
         alert("select atleast 1 event"); return;
     }
     var formData={
         "rollNo": rollNo.value,
         "event":event.value
     }
-    firebase.database().ref('gndu-amritsar/miscellaneous/' + event.value + '/' + rollNo.value).push(formData).then(function(){
+    firebase.database().ref('gndu-amritsar/miscellaneous/' + event1.value + '/' + rollNo.value).set(formData).then(function(){
         alert("You have succesfully applied for Jashan.");
         document.getElementById("submit").disabled=true;
     })

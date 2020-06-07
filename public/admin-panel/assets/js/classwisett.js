@@ -3,6 +3,8 @@ var text=document.querySelector("#fyicselected");
 var tyc = document.querySelector("#tycchecked");
 var tyc1=document.querySelector("#tycselected");
 var bgtext = document.getElementById("bgtext");
+var textplace = document.getElementById("textplace");
+// var Semester1 = document.getElementById("bigtext");
 // fyic.addEventlistener("click",function(){
 // 	fyic1.style.color="yellow";
 // });
@@ -20,11 +22,24 @@ function checking()
 	if(checkbox.checked == true)
 	{
 		text.style.display="block";
+		var students={};
 		var database=firebase.database();
-		var firebaseref=database.ref().child('gndu-amritsar/timeTable/MCA-(FYIC)/Semester1');
-		firebaseref.once("value", snap =>{
-		console.log(checkbox.innerText=snap.val());
-	});
+		var firebaseref=database.ref().child('gndu-amritsar/timeTable/MCA-(FYIC)/');
+		firebaseref.once("value", function(snapshot){
+			students=snapshot.val();
+		// checkbox.innerText=snap.val();
+		//Semester1.inner	Text = snap.val()
+		//bgtext.innerText = snap.val();
+	}).then(function(){
+		students.forEach(Semester1 => {
+			database.ref('gndu-amritsar/' + Semester1).once('value',function(snapshot){
+				Semester1 = snapshot.val();
+			}).then(function(){
+
+		let row = "<tr><td><label>" + Semester1.Monday + "</label></td><td><label>" + Semester1.Tuesday + "</label></td><td><label>"
++ Semester1.Wednesday + "</label></td><td><label>"		+ Semester1.Thursday + "</label></td><td><label>"  +Semester1.Friday + "</label></td></tr>"	});
+		})
+	})
 	}
 	else{
 			text.style.display="none";

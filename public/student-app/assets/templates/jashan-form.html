@@ -11,8 +11,9 @@
   <script src="../js/jquery.min.js"></script>
   <script src="../js/popper.min.js"></script>
   <script src="../js/bootstrap.min.js"></script>
-  <script src="../js/jashan-form.js"></script>
+  <!-- <script src="../../../admin-panel/assets/templates/js/jashan.js"></script> -->
   <script src="../js/local.js"></script>
+  <script src="../js/jashan-form.js"></script>
 </head>
 
 <!-- <body onload="local(); load(); disableControls(); chkLink();"> -->
@@ -57,7 +58,7 @@
                 </li>
             </ul>
           </li>
-          <li class="dropdown">
+<!--           <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">Fee Collection
               <span class="caret"></span>
             </a>
@@ -73,7 +74,7 @@
 
           <li>
             <a href="syllabus.html">Syllabus</a>
-          </li>
+          </li> -->
           <li>
             <a href="messages.html">Messages</a>
           </li>
@@ -123,19 +124,19 @@
                 <div class="form-group row">
                   <label for="inputtext" class="col-sm-2 col-form-label">Name</label>
                   <div class="col-sm-10">
-                    <input type="text" class="form-control" id="stuname" placeholder="">
+                    <input type="text" class="form-control" id="iname" placeholder="">
                   </div>
                 </div>
                 <div class="form-group row">
                   <label for="inputtext" class="col-sm-2 col-form-label">Roll No</label>
                   <div class="col-sm-10">
-                    <input type="text" class="form-control" id="rollno" placeholder="">
+                    <input type="text" class="form-control" id="irollno" placeholder="">
                   </div>
                 </div>
                 <div class="form-group row">
                   <label for="inputtext" class="col-sm-2 col-form-label">Class</label>
                   <div class="col-sm-10">
-                    <input type="text" class="form-control" id="class" placeholder="">
+                    <input type="text" class="form-control" id="iclass" placeholder="">
                   </div>
                 </div>
                 <div class="form-group row">
@@ -163,8 +164,10 @@
         </div>
         <div class="form-group row">
           <div class="col-sm-10">
-            <button class="btn btn-primary" onclick="validate();">Submit</button>
-            <button class="btn btn-primary">Reset</button>
+            <!-- <button class="btn btn-primary" onclick="validate();">Submit</button> -->
+            <input type="submit" id="isubmit" onclick="validate();" >
+            <!-- <button class="btn btn-primary">Reset</button> -->
+            <input type="button" id="ireset" name="cancel" value="Reset" onclick="reset();">
           </div>
         </div>
 

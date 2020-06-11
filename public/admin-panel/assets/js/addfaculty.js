@@ -28,8 +28,6 @@ function validate(){
         alert("please upload teacher image");
         return;
     }
-   
-
     var formData={
         "teacherId" : teacherId.value,
         "teacherName" : teacherName.value,
@@ -37,7 +35,7 @@ function validate(){
         "uploadPicture" : uploadPicture.value,
         
     };
-    firebase.database().ref('faculty/' + teacherName.value).push(formData).then(function(){
+    firebase.database().ref('gndu-amritsar/faculty/' + teacherName.value).push(formData).then(function(){
         alert("You have succesfully added teacher detail.");
     });
 }

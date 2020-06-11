@@ -1,6 +1,22 @@
 var rollNo = document.getElementById('rollno');
 var password = document.getElementById('password');
-
+function viewPassword()
+{
+  var passwordInput = document.getElementById('password');
+  var passStatus = document.getElementById('pass-status');
+ 
+  if (passwordInput.type == 'password'){
+    passwordInput.type='text';
+    passStatus.className='fas fa-eye-slash';
+    
+  }
+  else{
+    passwordInput.type='password';
+    passStatus.className='fas fa-eye';
+  }
+}
+var data={};
+var originalPassword = "";
 function signin(){
     if(rollNo.value==="" || rollNo===undefined){
         alert("Please Enter your Roll Number.");
@@ -11,34 +27,23 @@ function signin(){
         return false;
     }
     firebase.database().ref('gndu-amritsar/student/'+rollNo.value+'/password').once('value',function(snapshot){
-        data1=snapshot.val();
-        if( password.value===data1){
+        originalPassword=snapshot.val();
+        if( password.value===originalPassword){
             firebase.database().ref('gndu-amritsar/student/'+rollNo.value).once('value',function(snapshot){
-                data2=snapshot.val();
-                localStorage.setItem('class', data2.class);
-                localStorage.setItem('rollNo', data2.rollNo);
-                localStorage.setItem('name', data2.name);
+                data=snapshot.val();
+                localStorage.setItem('class', data.class);
+                localStorage.setItem('rollNo', data.rollNo);
+                localStorage.setItem('name', data.name);
             }).then(function(){
-            	$.getJSON('https://ipapi.co/json/', function(data) {
-				  var ip = data.ip;
-				  var region = data.region;
-				  var deviceData = {
-				  	"ip": ip,
-				  	"region": region
-				  }
-				  firebase.database().ref('gndu-amritsar/student/' + rollNo.value+'/registeredDevices/').push(deviceData).then(function(){
-			      }).then(function(){
-			      	document.location.href = "../../home.html";
-                	return false;
-			      });
-				});
-            })
+    	      	document.location.href = "../../home.html";
+            	return false;
+    	      });
         }
-        else if(data1==null){
+        else if(originalPassword==null || originalPassword==undefined){
             alert("This roll number is not registered with us. Please enter the correct roll number and try again. ");
             return false;
         }
-        else if(password.value!=data1){
+        else if(password.value!=originalPassword){
             alert("Please enter correct Password.");
             return false;
         }

@@ -35,14 +35,14 @@ function validate(){
     var game7 = document.getElementById("game7")
     var game8 = document.getElementById("game8")
     var game9 = document.getElementById("game9")
-    var formData={
-        "name":stuName.value,
-        "rollno":rollNo.value,
-        "gender":gender.value,
-        "mobNo":mobNo.value,
-        "emailID":emailID.value,
-        // "game":gamesArray.value
-    }
+    // var formData={
+    //     "name":stuName.value,
+    //     "rollno":rollNo.value,
+    //     "gender":gender.value,
+    //     "mobNo":mobNo.value,
+    //     "emailID":emailID.value,
+    //     // "game":gamesArray.value
+    // }
     if(stuName.value===""){
         alert("Enter your Name"); return;
     }
@@ -51,6 +51,11 @@ function validate(){
     }
     if(dob.value===""){
         alert("Enter your Date Of Birth"); return;
+    }
+    if(gender.checked==false)
+    {
+        alert("Kindely select your gender");
+        return;
     }
     if(mobNo.value===""){
         alert("Enter your Mobile No"); return;
@@ -63,43 +68,150 @@ function validate(){
     }
     if(game1.checked==true)
     {
-        gamesArray.push("Cricket")
-    firebase.database().ref('gndu-amritsar/student/miscellaneous/' + game1.value + '/' + rollNo.value).push(formData).then(function(){
-        alert("You have succesfully applied for sports.");
-        document.getElementById("submit").disabled=true;
-    })
+        // gamesArray.push("Cricket")
+        game1='Cricket';
+        firebase.database().ref('gndu-amritsar/student/' + rollNo.value + '/miscellaneous/'+game1).set(game1).then(function(){
+        var formData={
+        "name":stuName.value,
+        // "rollno":rollNo.value,
+        "gender":gender.value,
+        "mobNo":mobNo.value,
+        "emailID":emailID.value,
+    }
+        // alert("You have succesfully applied for sports.");
+        // document.getElementById("submit").disabled=true;
+        firebase.database().ref('gndu-amritsar/miscellaneous/'+game1+'/'+rollNo.value).set(formData).then(function(){
+            alert("You have successfully applied for sports:" + game1);
+        });
+    });
     }
      if(game2.checked==true)
     {
-        gamesArray.push("Badminton")
+        // gamesArray.push("Badminton")
+         game2='Badminton';
+        firebase.database().ref('gndu-amritsar/student/' + rollNo.value + '/miscellaneous/'+game2).set(game2).then(function(){
+        var formData={
+        "name":stuName.value,
+        "gender":gender.value,
+        "mobNo":mobNo.value,
+        "emailID":emailID.value,
+    }
+    firebase.database().ref('gndu-amritsar/miscellaneous/'+game2+'/'+rollNo.value).set(formData).then(function(){
+            alert("You have successfully applied for sports:" + game2);
+        });
+    })
     }
     if(game3.checked==true)
     {
-        gamesArray.push("Table Tennis")
+        // gamesArray.push("Table Tennis")
+        game3='Table Tennis';
+        firebase.database().ref('gndu-amritsar/student/' + rollNo.value + '/miscellaneous/'+game3).set(game3).then(function(){
+        var formData={
+        "name":stuName.value,
+        "gender":gender.value,
+        "mobNo":mobNo.value,
+        "emailID":emailID.value,
+    }
+    firebase.database().ref('gndu-amritsar/miscellaneous/'+game3+'/'+rollNo.value).set(formData).then(function(){
+            alert("You have successfully applied for sports:" + game3);
+        });
+    })
     }
     if(game4.checked==true)
     {
-        gamesArray.push("Lawn Tennis")
+        // gamesArray.push("Lawn Tennis")
+        game4='Lawn Tennis';
+        firebase.database().ref('gndu-amritsar/student/' + rollNo.value + '/miscellaneous/'+game4).set(game4).then(function(){
+        var formData={
+        "name":stuName.value,
+        "gender":gender.value,
+        "mobNo":mobNo.value,
+        "emailID":emailID.value,
+    }
+    firebase.database().ref('gndu-amritsar/miscellaneous/'+game4+'/'+rollNo.value).set(formData).then(function(){
+            alert("You have successfully applied for sports:" + game4);
+        });
+    })
     }
      if(game5.checked==true)
     {
-        gamesArray.push("Handball")
+        // gamesArray.push("Handball")
+        game5='Handball';
+        firebase.database().ref('gndu-amritsar/student/' + rollNo.value + '/miscellaneous/'+game5).set(game5).then(function(){
+        var formData={
+        "name":stuName.value,
+        "gender":gender.value,
+        "mobNo":mobNo.value,
+        "emailID":emailID.value,
+    }
+    firebase.database().ref('gndu-amritsar/miscellaneous/'+game5+'/'+rollNo.value).set(formData).then(function(){
+            alert("You have successfully applied for sports:" + game5);
+        });
+    })
     }
     if(game6.checked==true)
     {
-        gamesArray.push("Basketball")
+        // gamesArray.push("Basketball")
+        game6='Basketball';
+        firebase.database().ref('gndu-amritsar/student/' + rollNo.value + '/miscellaneous/'+game6).set(game6).then(function(){
+        var formData={
+        "name":stuName.value,
+        "gender":gender.value,
+        "mobNo":mobNo.value,
+        "emailID":emailID.value,
+    }
+    firebase.database().ref('gndu-amritsar/miscellaneous/'+game6+'/'+rollNo.value).set(formData).then(function(){
+            alert("You have successfully applied for sports:" + game6);
+        });
+    })
     }
     if(game7.checked==true)
     {
-        gamesArray.push("Football")
+        // gamesArray.push("Football")
+        game7='Football';
+        firebase.database().ref('gndu-amritsar/student/' + rollNo.value + '/miscellaneous/'+game7).set(game7).then(function(){
+        var formData={
+        "name":stuName.value,
+        "gender":gender.value,
+        "mobNo":mobNo.value,
+        "emailID":emailID.value,
+    }
+    firebase.database().ref('gndu-amritsar/miscellaneous/'+game7+'/'+rollNo.value).set(formData).then(function(){
+            alert("You have successfully applied for sports:" + game7);
+        });
+    })
     }
     if(game8.checked==true)
     {
-        gamesArray.push("Carrom")
+        // gamesArray.push("Carrom")
+        game8='Carrom';
+        firebase.database().ref('gndu-amritsar/student/' + rollNo.value + '/miscellaneous/'+game8).set(game8).then(function(){
+        var formData={
+        "name":stuName.value,
+        "gender":gender.value,
+        "mobNo":mobNo.value,
+        "emailID":emailID.value,
     }
-    if(game1.checked==true)
+    firebase.database().ref('gndu-amritsar/miscellaneous/'+game8+'/'+rollNo.value).set(formData).then(function(){
+            alert("You have successfully applied for sports:" + game8);
+        });
+    })
+    }
+    if(game9.checked==true)
     {
-        gamesArray.push("Hockey")
+        // gamesArray.push("Hockey")
+        game9='Badminton';
+        firebase.database().ref('gndu-amritsar/student/' + rollNo.value + '/miscellaneous/'+game9).set(game9).then(function(){
+        var formData={
+        "name":stuName.value,
+        "gender":gender.value,
+        "mobNo":mobNo.value,
+        "emailID":emailID.value,
     }
+    firebase.database().ref('gndu-amritsar/miscellaneous/'+game9+'/'+rollNo.value).set(formData).then(function(){
+            alert("You have successfully applied for sports:" + game9);
+        });
+    })
+            }
 }
 

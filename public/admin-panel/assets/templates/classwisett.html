@@ -2,6 +2,20 @@
 <head>
 	<title>Class-Wise TT</title>
 	 <style>
+	 	th{
+	 		border:2px solid black;
+	 		/*border-left:none;*/
+	 		/*border-right:none;*/
+	 		/*width:200%;*/
+	 		/*text-align:center;*/
+	 	}
+	 	tr,td
+	 	{
+	 		/*width:700%;*/
+	 		border:3px solid black;
+	 		text-align:center;
+	 		padding:2px;
+	 	}
     </style>
 <link rel="stylesheet" href="../css/style.css">
  <link href="../css/style2.css" rel="stylesheet">
@@ -26,31 +40,53 @@
 		</div>
 		<form class="form-group">
 			<label id="bigg">Kindly select your Class and then the semester</label><br>
-			<input type="checkbox" id="fyicchecked" onclick="checking();">MCA(FYIC)
+			<input type="checkbox" id="fyicchecked" onchange="checking();">MCA(FYIC)
 			<select id="fyicselected" style="display:none">	
-				<option id="bigtext">Semester1</option>
-				<option>Semester2</option>
-				<option>Semester3</option>
-				<option>Semester4</option>
-				<option>Semester5</option>
-				<option>Semester6</option>
-				<option>Semester7</option>
-				<option>Semester8</option>
-				<option>Semester9</option>
-				<option>Semester10</option>
-				<option>Semester11</option>
+				<option id="bigtext">2015-2018</option>
+				<option>2016-2019</option>
+				<option>2017-2020</option>
+				<option>2018-2021</option>
+				<option>2019-2022</option>
+				<option>2020-2023</option>
+				<option>2021-2024</option>
+				<option>2022-2025</option>
+				<!-- <option>20</option> -->
+				<!-- <option>Semester10</option> -->
+				<!-- <option>Semester11</option> -->
 			</select>
-			<textarea id="textdisplay"></textarea>
+			<br>	
+			<!-- <textarea id="textdisplay"></textarea> -->
+			<table id="htmltable" style="width:80%;display:none">
+				<tr>
+					<th style="text-align:center">Slot</th>
+					<th style="text-align:center">Monday</th>
+					<th style="text-align:center">Tuesday</th>
+					<th style="text-align:center">Wednesday</th>
+					<th style="text-align:center">Thursday</th>
+					<th style="text-align:center;">Friday</th>
+				</tr>
+						</table>
 	     	<br><br>
-			<input type="checkbox" id="tycchecked" onclick="checking();">MCA(TYC)
+			<input type="checkbox" id="tycchecked" onclick="checkit();">MCA(TYC)
 			<select id="tycselected" style="display:none;">
-				<option>Semester1</option>
-				<option>Semester2</option>
-				<option>Semester3</option>
-				<option>Semester4</option>
-				<option>Semester5</option>
-				<option>Semester6</option>
+				<option>2015-2018</option>
+				<option>2016-2019</option>
+				<option>2017-2020</option>
+				<option>2018-2021</option>
+				<option>2019-2022</option>
+				<option>2020-2021</option>
 			</select>
+			<br>
+						<table id="tyctable" style="width:80%;display:none">
+				<tr>
+					<th style="text-align:center">Slot</th>
+					<th style="text-align:center">Monday</th>
+					<th style="text-align:center">Tuesday</th>
+					<th style="text-align:center">Wednesday</th>
+					<th style="text-align:center">Thursday</th>
+					<th style="text-align:center;">Friday</th>
+				</tr>
+						</table>
 		</form>
 	</div>
 </div>

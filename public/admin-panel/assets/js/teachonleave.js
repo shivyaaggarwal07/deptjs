@@ -1,29 +1,36 @@
+
+var selectTeacher = document.getElementById("iselectTeacher");
+var selectDate = document.getElementById("iselectDate");
+var submitButton = document.getElementById("isubmit");
+
 function validate() {
-    var selectTeacher = document.getElementById("iselectTeacher");
-    var selectDate = document.getElementById("iselectDate");
-    var submitButton = document.getElementById("isubmit");
-    // if(selectTeacher.selectedIndex=="")
-    // {
-    //     alert("please select a teacher");
-    //     return;
-    // }
-    if(selectTeacher.value="")
+    selectTeacher = document.getElementById("iselectTeacher");
+    selectDate = document.getElementById("iselectDate");
+    submitButton = document.getElementById("isubmit");
+    if(selectTeacher.value=="")
     {
-        alert("Enter your name");
+        alert("Select teacher name");
         return;
     }
-    if(selectDate.value=="")
+    else if(selectDate.value=="")
     {
         alert("please select a date");
         return;
     }
-     
-           var formData = {
+    else{
+        var formData = {
                     "teacherName" : selectTeacher.value, 
-                    "date" : selectDate.value
+                    // "date" : selectDate.value
                         }; 
-    firebase.database().ref('teacheronleave/' + selectTeacher.value).set(formData).then(function(){
+    postData(formData,selectDate.value,selectTeacher.value);
+    }
+}
+
+function postData(formData,date,teacher){ 
+           
+    firebase.database().ref('gndu-amritsar/teacheronleave/'+date).set(formData).then(function(){
         alert("You have succesfully add teacher on leave detail.");
+        window.location.reload();
     });
                       
 }

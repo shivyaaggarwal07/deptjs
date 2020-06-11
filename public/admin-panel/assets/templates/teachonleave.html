@@ -19,7 +19,7 @@ background: linear-gradient(to right, #ffffff, #abbaab);" /* W3C, IE 10+/ Edge, 
                     <i class="fa fa-users"></i>
                 </div>
             </div>
-            <div class="section-container">
+            <div class="section-container form-group">
                 <div class="container">
                     <div class="big-title">
                         <h3>
@@ -28,20 +28,22 @@ background: linear-gradient(to right, #ffffff, #abbaab);" /* W3C, IE 10+/ Edge, 
                     </div>
 
                  <!-- dropdown menu code -->
-                <div class="form-group col-md-2">
+                <div class=" col-md-2">
                     <label for="inputState">Enter Your Name</label>
                     <!-- <input type="text" id="iselectTeacher" class="form-control"> -->
                     <select id="iselectTeacher" class="form-control">
-                      <option value="" disabled selected>Select a Teacher</option>
-                      <option>Sandeep Kaur</option>
-                      <option>Hardeep Singh</option>
-                      <option>Satveer Kaur</option>
-                      <option>Satinder Kaur</option>
-                      <option>R.V.D.Singh</option>
-                      <option>Gurpreet Singh</option>
+                      <option value="-1" selected>Select a Teacher</option>
+                      <option value="Sandeep Kaur">Sandeep Kaur</option>
+                      <option value="Hardeep Singh">Hardeep Singh</option>
+                      <option value="Satveer Kaur">Satveer Kaur</option>
+                      <option value="Satinder Kaur">Satinder Kaur</option>
+                      <option value="Parminder Kaur">Parminder Kaur</option>
+                      <option value="Gurpreet Singh">Gurpreet Singh</option>
+                      <option value="Navinder Kaur">Navinder kaur</option>
+                      <option value="Kuljit Kahlon">Kuljit kahlon</option>
                     </select>
                   </div>  
-                  <div class="form-group col-md-2">
+                  <div class=" col-md-2">
                     <label for="inputState">Select Date</label>
                     <input type="date" id="iselectDate">
                     <!-- <select id="iselectDate" class="form-control">
@@ -54,9 +56,9 @@ background: linear-gradient(to right, #ffffff, #abbaab);" /* W3C, IE 10+/ Edge, 
                       <option>6</option>
                     </select> -->
                   </div>                              
-                  <div class="form-group row">
+                  <div class=" row">
                     <div class="col-sm-10">
-                        <button type="submit" class="btn btn-primary" id="isubmit" onclick="validate();">Submit</button>
+                        <input type="submit" class="btn btn-primary" id="isubmit" onclick="validate();"></input>
                     </div>
                 </div>
                 </div>

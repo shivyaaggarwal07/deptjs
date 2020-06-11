@@ -111,7 +111,7 @@ function validate() {
                      "percentage" : percentage.value,
                      "division" : division.value
     };
-    firebase.database().ref('gendata/' + rollNo.value).push(formData).then(function(){
+    firebase.database().ref('gendata/' + rollNo.value).set(formData).then(function(){
         alert("You have succesfully added general data.");
     });
 }

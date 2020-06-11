@@ -24,7 +24,7 @@ function validate(){
         alert("New Password cannot be same as old Passowrd"); return;
     }
     var passworddata = confirmPassword.value;
-    firebase.database().ref.child('gndu-amritsar/student/' + rollno.value + 'password').set(passworddata).then(function(){
+    firebase.database().ref('gndu-amritsar/student/' + rollno.value + '/password/').set(passworddata).then(function(){
         alert("You have successfully changed your password");
         alert("Your New Password is"+ newPassword.value);
     })

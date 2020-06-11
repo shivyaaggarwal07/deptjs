@@ -38,9 +38,6 @@
                             <span class="caret"></span>
                         </a>
                         <ul class="dropdown-menu">
-<!--                             <li>
-                                <a href="examination-form.html">Examination Form</a>
-                            </li> -->
                             <li class="active">
                                 <a href="scholarship-form.html">Scholarship Form</a>
                             </li>
@@ -55,7 +52,7 @@
                                   </li>
                         </ul>
                     </li>
-                    <li class="dropdown">
+                    <!-- <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Fee Collection
                             <span class="caret"></span>
                         </a>
@@ -70,7 +67,7 @@
 
                     <li>
                         <a href="syllabus.html">Syllabus</a>
-                    </li>
+                    </li> -->
                     <li>
                         <a href="messages.html">Messages</a>
                     </li>
@@ -138,26 +135,26 @@
                                 <div class="form-group row">
                                     <label for="inputtext" class="col-sm-2 col-form-label">Category</label>
                                     <div class="col-sm-10">
-                                        <input type="radio" id="category" name="Category" checked> Gen
+                                        <input type="radio" id="category" name="Category" value="General"> Gen
                                         <br>
-                                        <input type="radio" id="category" name="Category"> SC/ST
+                                        <input type="radio" id="category" name="Category" value="SC/ST"> SC/ST
                                         <br>
-                                        <input type="radio" id="category" name="Category"> BC
+                                        <input type="radio" id="category" name="Category" value="BC"> BC
                                         <br>
-                                        <input type="radio" id="category" name="Category"> Others
+                                        <input type="radio" id="category" name="Category" value="OTHER"> Others
                                         <br>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label for="inputtext" class="col-sm-2 col-form-label">Minority</label>
                                     <div class="col-sm-10">
-                                        <input type="radio" id="minority" name="Minority"> Sikh
+                                        <input type="radio" id="minority" name="Minority" value="Hindu"> Hindu
                                         <br>
-                                        <input type="radio" id="minority" name="Minority" checked> Hindu
+                                        <input type="radio" id="minority" name="Minority" value="Sikh"> Sikh
                                         <br>
-                                        <input type="radio" id="minority" name="Minority"> Muslim
+                                        <input type="radio" id="minority" name="Minority" value="Muslim"> Muslim
                                         <br>
-                                        <input type="radio" id="minority" name="Minority"> Others
+                                        <input type="radio" id="minority" name="Minority" value="Other"> Other
                                         <br>
                                     </div>
                                 </div>
@@ -176,9 +173,9 @@
                                 <div class="form-group row">
                                     <label for="inputtext" class="col-sm-2 col-form-label">Fee Concession</label>
                                     <div class="col-sm-10">
-                                        <input type="radio" id="concession" name="Fee Concession" checked> Full
+                                        <input type="radio" id="concession" name="Fee Concession" value="full" > Full
                                         <br>
-                                        <input type="radio" id="concession" name="Fee Concession"> Half
+                                        <input type="radio" id="concession" name="Fee Concession" value="half"> Half
                                     </div>
                                 </div>
                             </form>
@@ -191,10 +188,5 @@
                         <button class="btn btn-primary">Reset</button>
                     </div>
                 </div>
-
-
-
-
 </body>
-
 </html>

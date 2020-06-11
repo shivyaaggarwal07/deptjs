@@ -1,7 +1,7 @@
 var eventsArray = [];
-var name = document.getElementById("iname");
-var rollno = document.getElementById("irollno");
-var jclass = document.getElementById("iclass");
+var name = document.getElementById("stuname");
+var rollno = document.getElementById("rollno");
+var jclass = document.getElementById("class");
 var event1 = document.getElementById("event1");
 var event2 = document.getElementById("event2");
 var event3 = document.getElementById("event3");
@@ -20,7 +20,7 @@ var singing = document.getElementById("s1");
 var rangoli = document.getElementById("r1");
 function validate()
 {
-    var eventsArray = [];
+    var event ='';
 var name = document.getElementById("iname");
 var rollno = document.getElementById("irollno");
 var jclass = document.getElementById("iclass");
@@ -53,45 +53,97 @@ var submitButton = document.getElementById("isubmit");
         return;
     }
     if(event1.checked==true)
-    {
-        eventsArray.push("Dance")
+    {   
+        event_1='dance';
+        firebase.database().ref('gndu-amritsar/student/'+rollno.value+'/jashan/'+event_1).set(event_1).then(function(){
+            var formData={
+                'rollno':rollno.value,
+                'class':jclass.value //localStorage.getItem('academic_class_name')
+            }
+            firebase.database().ref('gndu-amritsar/jashan/' + event_1+'/'  + rollno.value).set(formData).then(function(){
+                alert("You have succesfully filled jashan form for event: "+event_1);
+                // submitButton.disabled=true;
+            }); 
+        });
     }
     if(event2.checked==true)
     {
-        eventsArray.push("Painting")
+        event_2='painting';
+        firebase.database().ref('gndu-amritsar/student/'+rollno.value+'/jashan/'+event_2).set(event_2).then(function(){
+            var formData={
+                'rollno':rollno.value,
+                'class':jclass.value //localStorage.getItem('academic_class_name')
+            }
+            firebase.database().ref('gndu-amritsar/jashan/' + event_2+'/'  + rollno.value).set(formData).then(function(){
+               alert("You have succesfully filled jashan form for event: "+event_2);
+            }); 
+        });
     }
     if(event3.checked==true)
     {
-        eventsArray.push("Acting")
+        event='acting';
+        firebase.database().ref('gndu-amritsar/student/'+rollno.value+'/jashan/'+event).set(event).then(function(){
+            var formData={
+                'rollno':rollno.value,
+                'class':jclass.value //localStorage.getItem('academic_class_name')
+            }
+            firebase.database().ref('gndu-amritsar/jashan/' + event+'/'  + rollno.value).set(formData).then(function(){
+                alert("You have succesfully filled jashan form for event: "+event);
+            }); 
+        });
     }
     if(event4.checked==true)
     {
-        eventsArray.push("Quiz")
+        event='quiz';
+        firebase.database().ref('gndu-amritsar/student/'+rollno.value+'/jashan/'+event).set(event).then(function(){
+            var formData={
+                'rollno':rollno.value,
+                'class':jclass.value //localStorage.getItem('academic_class_name')
+            }
+            firebase.database().ref('gndu-amritsar/jashan/' + event+'/'  + rollno.value).set(formData).then(function(){
+                alert("You have succesfully filled jashan form for event: "+event);
+            }); 
+        });
     }
     if(event5.checked==true)
     {
-        eventsArray.push("Literary")
+        event='literary';
+        firebase.database().ref('gndu-amritsar/student/'+rollno.value+'/jashan/'+event).set(event).then(function(){
+            var formData={
+                'rollno':rollno.value,
+                'class':jclass.value //localStorage.getItem('academic_class_name')
+            }
+            firebase.database().ref('gndu-amritsar/jashan/' + event+'/'  + rollno.value).set(formData).then(function(){
+                alert("You have succesfully filled jashan form for event: "+event);
+            }); 
+        });
     }
     if(event6.checked==true)
     {
-        eventsArray.push("Cultural")
+        event='cultural';
+        firebase.database().ref('gndu-amritsar/student/'+rollno.value+'/jashan/'+event).set(event).then(function(){
+            var formData={
+                'rollno':rollno.value,
+                'class':jclass.value //localStorage.getItem('academic_class_name')
+            }
+            firebase.database().ref('gndu-amritsar/jashan/' + event+'/'  + rollno.value).set(formData).then(function(){
+                alert("You have succesfully filled jashan form for event: "+event);
+            }); 
+        });
     }
     if(event7.checked==true)
     {
-        eventsArray.push("Singing")
-    }
-
-    var formData = {
-                    "name" : name.value,
-                    "rollNo" : rollno.value,
-                    "jclass" : jclass.value
-    };
-    firebase.database().ref('jashan/' + event1.value + '/' + rollno.value).set(formData).then(function(){
-        firebase.database().ref('students/' +rollno.value+'jashan/'+ event1.value).set(event1.value).then(function(){
+        event='singing';
+        firebase.database().ref('gndu-amritsar/student/'+rollno.value+'/jashan/'+event).set(event).then(function(){
+            var formData={
+                'rollno':rollno.value,
+                'class':jclass.value //localStorage.getItem('academic_class_name')
+            }
+            firebase.database().ref('gndu-amritsar/jashan/' + event+'/'  + rollno.value).set(formData).then(function(){
+                alert("You have succesfully filled jashan form for event: "+event);
+            }); 
         });
-        alert("You have succesfully filled jashan form.");
-        submitButton.disabled=true;
-    }); 
+    }
 }
 function reset()
 {

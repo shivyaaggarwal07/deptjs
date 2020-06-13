@@ -8,6 +8,17 @@
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <script src="../js/app.js"></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <style>
+        th{
+            border:2px solid black;
+        }
+        tr,td
+        {
+            border:3px solid black;
+            text-align:center;
+            padding:2px;
+        }
+    </style>
 </head>
 
 <body>
@@ -35,7 +46,7 @@
                                 <div class="form-group row">
                                     <label for="inputtext" class="col-sm-3 col-form-label">Course</label>
                                     <div class="col-sm-9">
-                                        <input type="checkbox"  id="ifyic" placeholder="Kindly Type the Batch">MCA(FYIC)<br>
+                                        <input type="checkbox"  id="checkbox"  onclick ="valid();" placeholder="Kindly Type the Batch">MCA(FYIC)<br>
                                        <input type="checkbox"  id="ityc" placeholder="Kindly Type the Batch">MCA(TYC)   
                                     </div>
                                 </div>
@@ -53,10 +64,20 @@
                                     <p id = "demo"></p>
                                 </div>
                             </div>
+                            <table id="htmltable" style="width:80%">
+                <tr>
+                    <th style="text-align:center">S.No</th>
+                    <th style="text-align:center">Name</th>
+                    <th style="text-align:center">Rollno</th>
+                    <!-- <th style="text-align:center">Wednesday</th> -->
+                    <!-- <th style="text-align:center">Thursday</th> -->
+                    <!-- <th style="text-align:center;">Friday</th> -->
+                </tr>
+                        </table>
 
                 <div class="form-group row">
                     <div class="col-sm-10">
-                        <button type="submit" class="btn btn-primary" id="isubmit" onclick="valid();">Submit</button>
+                        <button type="submit" class="btn btn-primary" id="isubmit">Submit</button>
                         <button type="submit" class="btn btn-primary" id="icancle">Cancel</button>
                     </div>
                 </div>
@@ -64,7 +85,7 @@
         </div>
     </section>
 
-    <script src="../js/classwiselist.js"></script>
+    <script src="../js/studentleft.js"></script>
 
 </body>
 

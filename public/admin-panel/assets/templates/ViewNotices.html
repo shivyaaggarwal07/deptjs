@@ -4,7 +4,7 @@
         <link href="../css/style.css" rel="stylesheet">
         <link href="../css/style2.css" rel="stylesheet">
         <link href="../css/bootstrap.min.css" rel="stylesheet">
-        <link rel="import" href="navabar.html">
+        <!-- <link rel="import" href="navabar.html"> -->
         <style>
         	.edittoggle{
         		display:none;
@@ -27,11 +27,11 @@
                         <div class="border-title"></div>
                     </div>
 <section>
-    <div class="container">
+    <div class="container" id="cont">
     <div class="row">
         <div class="col-sm-4 col-lg-3">
             <div class="card">
-                <img src="../img/n1.png" id="img4" style="height:280;width:280;border:1px solid black">
+                <img src="../img/n1.png" id="img1" style="height:280;width:280;border:1px solid black">
                 <div class="card-body">
                 <h4  class="card-title">NOTICE 1</h4>
                 <pre class="card-text" style="width:280px">TIME:-3:45pm<br>DAY:- MONDAY
@@ -40,8 +40,8 @@
                     <div class="row">
                     <!-- <div class="col-lg-2"> -->
                     <!-- <a href="#" class="btn btn-primary">DOWNLOAD</a> -->
-                    <a href="#" class="btn btn-warning ipublish" onclick="publishh();">PUBLISH</a>
-                    <a href="#" class="btn btn-danger iunpublish" onclick="unpublishh();">UNPUBLISH</a>
+                    <a  class="btn btn-warning ipublish" onclick="show('img1');">PUBLISH</a>
+                    <a  class="btn btn-danger iunpublish" onclick="hide('img1');">UNPUBLISH</a>
                     <!-- <a href="#" class="btn btn-success" onclick="validity();">VALIDITY CHECK</a> -->
                         <!-- </div> -->
                     </div>
@@ -49,7 +49,7 @@
             </div></div>
         <div class="col-sm-4 col-lg-3">
             <div class="card">
-                <img src="../img/n1.png" id="img2" style="width:280;height:280;border:1px solid black">
+                <img src="../img/fees.jpg" id="img2" style="width:280;height:280;border:1px solid black">
                 <div class="card-body">
                 <h4 class="card-title">NOTICE 2</h4>
                 <pre class="card-text" style="width:280px">TIME:-1:05pm<br>DAY:-TUESDAY
@@ -57,8 +57,8 @@
                 </pre>
                     <!-- <div class="col-lg-4"> -->
                     <!-- <a href="#" class="btn btn-primary">DOWNLOAD</a> -->
-                    <a href="#" class="btn btn-warning ipublish" onclick="publishh();">PUBLISH</a>
-                    <a href="#" class="btn btn-danger iunpublish" onclick="unpublishh();">UNPUBLISH</a>
+                    <a href="#" class="btn btn-warning ipublish" onclick="show('img2');">PUBLISH</a>
+                    <a href="#" class="btn btn-danger iunpublish" onclick="hide('img2');">UNPUBLISH</a>
                     <!-- <a href="#" class="btn btn-success" onclick="validity();">VALIDITY CHECK</a> -->
                 <!-- </div> -->
             </div>
@@ -73,8 +73,8 @@
                 	<!-- VALIDITY:- CLOSED -->
                 </pre>
                     <!-- <a href="#" class="btn btn-primary" >DOWNLOAD</a> -->
-                    <a href="#" class="btn btn-warning ipublish" onclick="publishh();">PUBLISH</a>
-                    <a href="#" class="btn btn-danger iunpublish" onclick="unpublishh();">UNPUBLISH</a>
+                    <a href="#" class="btn btn-warning ipublish" onclick="show('img3');">PUBLISH</a>
+                    <a href="#" class="btn btn-danger iunpublish" onclick="hide('img3');">UNPUBLISH</a>
                     <!-- <a href="#" class="btn btn-success" onclick="validity();">VALIDITY CHECK</a> -->
                 </div>
             </div>
@@ -83,15 +83,15 @@
 
         <div class="col-sm-4 col-lg-3">
             <div class="card">
-                <img src="../img/n1.png" id="img4" style="width:280;height:280;border:1px solid black">
+                <img src="../img/new3notice.jpg" id="img4" style="width:280;height:280;border:1px solid black">
                 <div class="card-body">
                 <h4 class="card-title">NOTICE 4</h4>
-                <pre class="card-text">TIME:-9:45am<br>DAY:- THURSDAY
+                <pre class="card-text" style="width:280">TIME:-9:45am<br>DAY:- THURSDAY
                 	<!-- VALIDITY:-<span id="ivalid">20.7.2020</span> -->
                 </pre>
                     <!-- <a href="#" class="btn btn-primary">DOWNLOAD</a> -->
-                    <a href="#" class="btn btn-warning ipublish " onclick="publishh();">PUBLISH</a>
-                    <a href="#" class="btn btn-danger iunpublish" onclick="unpublishh();">UNPUBLISH</a>
+                    <a href="#" class="btn btn-warning ipublish " onclick="show('img4');">PUBLISH</a>
+                    <a href="#" class="btn btn-danger iunpublish" onclick="hide('img4');">UNPUBLISH</a>
                     <!-- <a href="#" class="btn btn-success" onclick="validity();">VALIDITY CHECK</a> -->
 
 
@@ -104,15 +104,15 @@
         <div class="row" style="margin-top:10px">
             <div class=" col-sm-4 col-lg-3">
                 <div class="card">
-                <img src="../img/n1.png" id="img5" style="width:280;height:280;border:1px solid black;">
+                <img src="../img/newnotice.jpg" id="img5" style="width:280;height:280;border:1px solid black;">
                 <div class="card-body">
                 <h4 class="card-title">NOTICE 5</h4>
                 <pre class="card-text" style="width:280">TIME:-12:45pm<br>DAY:-FRIDAY
                 	<!-- VALIDITY:- 23.08.2020 -->
                 </pre>
                     <!-- <a href="#" class="btn btn-primary">DOWNLOAD</a> -->
-                    <a href="#" class="btn btn-warning ipublish" onclick="publishh();">PUBLISH</a>
-                    <a href="#" class="btn btn-danger iunpublish" onclick="unpublishh();">UNPUBLISH</a>
+                    <a href="#" class="btn btn-warning ipublish" onclick="show('img5');">PUBLISH</a>
+                    <a href="#" class="btn btn-danger iunpublish" onclick="hide('img5');">UNPUBLISH</a>
                     <!-- <a href="#" class="btn btn-success" onclick="validity();">VALIDITY CHECK</a> -->
                 </div>
 
@@ -127,8 +127,8 @@
                     	<!-- VALIDITY:- 20.03.2019 -->
                     </pre> 
                     <!-- <a href="#" class="btn btn-primary">DOWNLOAD</a> -->
-                    <a href="#" class="btn btn-warning ipublish" onclick="publishh();">PUBLISH</a>
-                    <a href="#" class="btn btn-danger iunpublish" onclick="unpublishh();">UNPUBLISH</a>
+                    <a href="#" class="btn btn-warning ipublish" onclick="show('img6');">PUBLISH</a>
+                    <a href="#" class="btn btn-danger iunpublish" onclick="hide('img6');">UNPUBLISH</a>
                     <!-- <a href="#" class="btn btn-success" onclick="validity();">VALIDITY CHECK</a> -->
                   </div>
                </div>
@@ -142,23 +142,23 @@
                     	<!-- VALIDITY:- 20.03.2019 -->
                     </pre> 
                     <!-- <a href="#" class="btn btn-primary">DOWNLOAD</a> -->
-                    <a href="#" class="btn btn-warning ipublish" onclick="publishh();">PUBLISH</a>
-                    <a href="#" class="btn btn-danger iunpublish" onclick="unpublishh();">UNPUBLISH</a>
+                    <a href="#" class="btn btn-warning ipublish" onclick="show('img7');">PUBLISH</a>
+                    <a href="#" class="btn btn-danger iunpublish" onclick="hide('img7');">UNPUBLISH</a>
                     <!-- <a href="#" class="btn btn-success" onclick="validity();">VALIDITY CHECK</a> -->
                   </div>
                </div>
            </div>
            <div class="col-sm-4 col-lg-3">
                 <div class="card">
-                  <img src="../img/n1.png" id="img8" style="width:280;height:280;border:1px solid black">
+                  <img src="../img/newnotice.jpg" id="img8" style="width:280;height:280;border:1px solid black">
                   <div class="card-body">
                     <h4 class="card-title">NOTICE 8</h4>
                     <pre class="card-text" style="width:280">TIME:-11:45am<br>DAY:- SATURDAY
                     	<!-- VALIDITY:- 20.03.2019 -->
                     </pre> 
                     <!-- <a href="#" class="btn btn-primary">DOWNLOAD</a> -->
-                    <a href="#" class="btn btn-warning ipublish" onclick="publishh();">PUBLISH</a>
-                    <a href="#" class="btn btn-danger iunpublish" onclick="unpublishh();">UNPUBLISH</a>
+                    <a href="#" class="btn btn-warning ipublish" onclick="show('img8');">PUBLISH</a>
+                    <a href="#" class="btn btn-danger iunpublish" onclick="hide('img8');">UNPUBLISH</a>
                     <!-- <a href="#" class="btn btn-success" onclick="validity();">VALIDITY CHECK</a> -->
                   </div>
                </div>
@@ -166,7 +166,70 @@
 
 
 </div>
+ <div class="row" style="margin-top:10px">
+            <div class=" col-sm-4 col-lg-3">
+                                <div class="card">
+                  <img src="../img/fees.jpg" id="img9" style="width:280;height:280;border:1px solid black">
+                  <div class="card-body">
+                    <h4 class="card-title">NOTICE 9</h4>
+                    <pre class="card-text" style="width:280">TIME:-11:45am<br>DAY:- SATURDAY
+                        <!-- VALIDITY:- 20.03.2019 -->
+                    </pre> 
+                    <!-- <a href="#" class="btn btn-primary">DOWNLOAD</a> -->
+                    <a href="#" class="btn btn-warning ipublish" onclick="show('img9');">PUBLISH</a>
+                    <a href="#" class="btn btn-danger iunpublish" onclick="hide('img9');">UNPUBLISH</a>
+                    <!-- <a href="#" class="btn btn-success" onclick="validity();">VALIDITY CHECK</a> -->
+                  </div>
+               </div>
         </div>
+                    <div class=" col-sm-4 col-lg-3">
+                                <div class="card">
+                  <img src="../img/new3notice.jpg" id="img10" style="width:280;height:280;border:1px solid black">
+                  <div class="card-body">
+                    <h4 class="card-title">NOTICE 10</h4>
+                    <pre class="card-text" style="width:280">TIME:-11:45am<br>DAY:- SATURDAY
+                        <!-- VALIDITY:- 20.03.2019 -->
+                    </pre> 
+                    <!-- <a href="#" class="btn btn-primary">DOWNLOAD</a> -->
+                    <a href="#" class="btn btn-warning ipublish" onclick="show('img10');">PUBLISH</a>
+                    <a href="#" class="btn btn-danger iunpublish" onclick="hide('img10');">UNPUBLISH</a>
+                    <!-- <a href="#" class="btn btn-success" onclick="validity();">VALIDITY CHECK</a> -->
+                  </div>
+               </div>
+        </div>
+        <div class=" col-sm-4 col-lg-3">
+                                <div class="card">
+                  <img src="../img/n1.png" id="img11" style="width:280;height:280;border:1px solid black">
+                  <div class="card-body">
+                    <h4 class="card-title">NOTICE 11</h4>
+                    <pre class="card-text" style="width:280">TIME:-11:45am<br>DAY:- SATURDAY
+                        <!-- VALIDITY:- 20.03.2019 -->
+                    </pre> 
+                    <!-- <a href="#" class="btn btn-primary">DOWNLOAD</a> -->
+                    <a href="#" class="btn btn-warning ipublish" onclick="show('img11');">PUBLISH</a>
+                    <a href="#" class="btn btn-danger iunpublish" onclick="hide('img11');">UNPUBLISH</a>
+                    <!-- <a href="#" class="btn btn-success" onclick="validity();">VALIDITY CHECK</a> -->
+                  </div>
+               </div>
+        </div>
+        <div class=" col-sm-4 col-lg-3">
+                                <div class="card">
+                  <img src="../img/n1.png" id="img12" style="width:280;height:280;border:1px solid black">
+                  <div class="card-body">
+                    <h4 class="card-title">NOTICE 12</h4>
+                    <pre class="card-text" style="width:280">TIME:-11:45am<br>DAY:- SATURDAY
+                        <!-- VALIDITY:- 20.03.2019 -->
+                    </pre> 
+                    <!-- <a href="#" class="btn btn-primary">DOWNLOAD</a> -->
+                    <a href="#" class="btn btn-warning ipublish" onclick="show('img12');">PUBLISH</a>
+                    <a href="#" class="btn btn-danger iunpublish" onclick="hide('img12');">UNPUBLISH</a>
+                    <!-- <a href="#" class="btn btn-success" onclick="validity();">VALIDITY CHECK</a> -->
+                  </div>
+               </div>
+        </div>
+
+    </div>
+</div>
     </section>
 </div>
 </div>

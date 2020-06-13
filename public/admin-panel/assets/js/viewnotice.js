@@ -1,19 +1,75 @@
 // var edit = document.querySelector("#iedit"); this gives an error 
-var publish = document.querySelector(".ipublish");
-var unpublish = document.querySelector(".iunpublish");
+var publish = document.getElementsByClassName("ipublish");
+var unpublish = document.getElementsByClassName("iunpublish");
 var valid = document.querySelector("ivalid");
-var imgthird = document.querySelector("#img3");
-// function publishh()
-// {
-publish.addEventListener("click" , function(){
-	imgthird.classList.add(".edittoggle");
-});
+var img3 = document.getElementById("img3");
+var img4 = document.getElementById("img4");
+var img1 = document.querySelector("#img1");
+var img2 = document.getElementById("img2");
+var img5 = document.getElementById("img5");
+var img6 = document.getElementById("img6");
+var img7 = document.getElementById("img7");
+var img8 = document.getElementById("img8");
+var img9 = document.getElementById("img9");
+var img10 = document.getElementById("img10");
+var img11 = document.getElementById("img11");
+var img12 =document.getElementById("img12");
+// var container = document.getElementById("cont");
+
+var element;
+
+function show(id)
+{
+	element = document.getElementById(id);
+	element.classList.remove("edittoggle");
+	alert("Notice is published");
+}
+function showing(){
+	img1.classList.remove("edittoggle");
+	alert("Notice is published");
+}
+function third(){
+	img2.classList.remove("edittoggle");
+	img3.classList.remove("edittoggle");
+	img5.classList.remove("edittoggle");
+	img6.classList.remove("edittoggle");
+	img7.classList.remove("edittoggle");
+	img8.classList.remove("edittoggle");
+	img9.classList.remove("edittoggle");
+	img10.classList.remove("edittoggle");
+	img11.classList.remove("edittoggle");
+	img12.classList.remove("edittoggle");
+}
+function hide(id)
+{
+	element = document.getElementById(id);
+	element.classList.add("edittoggle");
+	alert("Notice is unpublished");
+}
+function hiding()
+{
+	img1.classList.add("edittoggle");
+	alert("Notice is unpublished");
+}
+function thirdd(){
+	img2.classList.add("edittoggle");
+	img3.classList.add("edittoggle");
+	img5.classList.add("edittoggle");
+	img6.classList.add("edittoggle");
+	img7.classList.add("edittoggle");
+	img8.classList.add("edittoggle");
+	img9.classList.add("edittoggle");
+	img10.classList.add("edittoggle");
+	img11.classList.add("edittoggle");
+	img12.classList.add("edittoggle");
+}
+// });
 // }
 // function unpublishh()
 // {
-unpublish.addEventListener("click" , function(){
-            imgthird.classList.remove(".edittoggle");
-        });
+// unpublish.onclick= function(){
+            // imgthird.classList.add(".edittoggle");
+       // }
 // }
 function validity()
 {

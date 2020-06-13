@@ -13,6 +13,42 @@
 background: -webkit-linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 "> -->
+<style>
+    /*@active:green;
+    @inactive:orange;*/
+/*    .toggle-switch{
+    background: #ccc;
+  width: 80px;
+  height: 30px;
+  overflow: hidden;
+  border-radius: 3px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px;
+}
+ &:after {
+    content: " ";
+    display: block;
+    width: 40px;
+    height: 30px;
+    background-color: @active;
+    border: 3px solid #fff;
+    border-top: 0;
+    border-bottom: 0;
+    margin-left: -3px;
+    transition: all 0.1s ease-in-out;
+  }
+  .active & {
+    &:after {
+      margin-left: 40px;
+    }
+  }
+.toggle-label {
+  display: inline-block;
+  line-height: 30px;
+}*/
+
+    </style>
 <body>
     <!-- Page formatting code -->
     <section id="team" class="section grey-section">
@@ -88,14 +124,14 @@ background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF); /* W3C, IE 10+
                                             <tbody>
                                                 <tr>
                                                     <td>
-                                                        <label id="irollno1">2017CSC1048</label>
+                                                        <label id="irollno1" value="2017CSC1048">2017CSC1048</label>
                                                     </td>
                                                     <td>
-                                                        <label id="iname1">Shivya</label>
+                                                        <label id="iname1" value="Shivya">Shivya</label>
                                                     </td>
                                                     <td>
                                                         <label class="switch" id="istatus">
-                                                            <input type="checkbox">
+                                                            <input type="checkbox" onchange="show('iname1');">
                                                             <span class="slider round"></span>
                                                         </label>
                                                     </td>
@@ -109,7 +145,7 @@ background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF); /* W3C, IE 10+
                                                             </td>
                                                             <td>
                                                                 <label class="switch" id="istatus">
-                                                                    <input type="checkbox">
+                                                                    <input type="checkbox" onchange ="show('iname2')">
                                                                     <span class="slider round"></span>
                                                                 </label>
                                                             </td>
@@ -123,7 +159,7 @@ background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF); /* W3C, IE 10+
                                                             </td>
                                                             <td>
                                                                 <label class="switch" id="istatus">
-                                                                    <input type="checkbox">
+                                                                    <input type="checkbox" onchange="show('iname3')">
                                                                     <span class="slider round"></span>
                                                                 </label>
                                                             </td>
@@ -137,7 +173,7 @@ background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF); /* W3C, IE 10+
                                                             </td>
                                                             <td>
                                                                 <label class="switch" id="istatus">
-                                                                    <input type="checkbox">
+                                                                    <input type="checkbox" onchange="show('iname4')">
                                                                     <span class="slider round"></span>
                                                                 </label>
                                                             </td>
@@ -151,7 +187,7 @@ background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF); /* W3C, IE 10+
                                                             </td>
                                                             <td>
                                                                 <label class="switch" id="istatus">
-                                                                    <input type="checkbox">
+                                                                    <input type="checkbox" onchange="show('iname5')">
                                                                     <span class="slider round"></span>
                                                                 </label>
                                                             </td>
@@ -165,7 +201,7 @@ background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF); /* W3C, IE 10+
                                                             </td>
                                                             <td>
                                                                 <label class="switch" id="istatus">
-                                                                    <input type="checkbox">
+                                                                    <input type="checkbox" onchange="show('iname6')">
                                                                     <span class="slider round"></span>
                                                                 </label>
                                                             </td>
@@ -182,9 +218,6 @@ background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF); /* W3C, IE 10+
                 </main>
                 </div>
                 </div>
-    </section>
-
-
+    </section>  
 </body>
-
 </html>

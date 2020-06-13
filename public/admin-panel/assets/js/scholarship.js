@@ -59,6 +59,6 @@ function reset()
     name.value="";
     rollNo.value="";
     sclass.value="";
-    incomeCertificatex.length="";
+    incomeCertificate="";
     residenceCertificate="";
 }

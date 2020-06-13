@@ -24,45 +24,45 @@ function show(id)
 	element.classList.remove("edittoggle");
 	alert("Notice is published");
 }
-function showing(){
-	img1.classList.remove("edittoggle");
-	alert("Notice is published");
-}
-function third(){
-	img2.classList.remove("edittoggle");
-	img3.classList.remove("edittoggle");
-	img5.classList.remove("edittoggle");
-	img6.classList.remove("edittoggle");
-	img7.classList.remove("edittoggle");
-	img8.classList.remove("edittoggle");
-	img9.classList.remove("edittoggle");
-	img10.classList.remove("edittoggle");
-	img11.classList.remove("edittoggle");
-	img12.classList.remove("edittoggle");
-}
+// function showing(){
+// 	img1.classList.remove("edittoggle");
+// 	alert("Notice is published");
+// }
+// function third(){
+// 	img2.classList.remove("edittoggle");
+// 	img3.classList.remove("edittoggle");
+// 	img5.classList.remove("edittoggle");
+// 	img6.classList.remove("edittoggle");
+// 	img7.classList.remove("edittoggle");
+// 	img8.classList.remove("edittoggle");
+// 	img9.classList.remove("edittoggle");
+// 	img10.classList.remove("edittoggle");
+// 	img11.classList.remove("edittoggle");
+// 	img12.classList.remove("edittoggle");
+// }
 function hide(id)
 {
 	element = document.getElementById(id);
 	element.classList.add("edittoggle");
 	alert("Notice is unpublished");
 }
-function hiding()
-{
-	img1.classList.add("edittoggle");
-	alert("Notice is unpublished");
-}
-function thirdd(){
-	img2.classList.add("edittoggle");
-	img3.classList.add("edittoggle");
-	img5.classList.add("edittoggle");
-	img6.classList.add("edittoggle");
-	img7.classList.add("edittoggle");
-	img8.classList.add("edittoggle");
-	img9.classList.add("edittoggle");
-	img10.classList.add("edittoggle");
-	img11.classList.add("edittoggle");
-	img12.classList.add("edittoggle");
-}
+// function hiding()
+// {
+// 	img1.classList.add("edittoggle");
+// 	alert("Notice is unpublished");
+// }
+// function thirdd(){
+// 	img2.classList.add("edittoggle");
+// 	img3.classList.add("edittoggle");
+// 	img5.classList.add("edittoggle");
+// 	img6.classList.add("edittoggle");
+// 	img7.classList.add("edittoggle");
+// 	img8.classList.add("edittoggle");
+// 	img9.classList.add("edittoggle");
+// 	img10.classList.add("edittoggle");
+// 	img11.classList.add("edittoggle");
+// 	img12.classList.add("edittoggle");
+// }
 // });
 // }
 // function unpublishh()

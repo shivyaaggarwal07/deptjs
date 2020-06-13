@@ -122,7 +122,7 @@ function submitQuery(){
         "subject":subject.value,
         "message":query.value
     }
-    firebase.database().ref('gndu-amritsar/d/index/contact/').push(formData).then(function(){
+    firebase.database().ref('gndu-amritsar/index/contact/').push(formData).then(function(){
         alert("You have succesfully passed the Query. Your Query will be rectified soon.");
         document.getElementById("submit").disabled=true;
     });

@@ -156,6 +156,7 @@ var submitButton = document.getElementById("isubmit");
         event_7='singing';
         firebase.database().ref('gndu-amritsar/student/'+rollno.value+'/jashan/'+event_7).set(event_7).then(function(){
             var formData={
+                // 'rollno':rollno.value,
                 'name':name.value,
                 'class':jclass.value //localStorage.getItem('academic_class_name')
             }

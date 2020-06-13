@@ -46,3 +46,12 @@ function loadMsg(){
     });
     	
 }
+function msg()
+{
+	var readmessage = document.getElementById("messages");
+	messages.classList.add('cancel');
+}
+function hiding()
+{
+		messages.style.display="none";
+}

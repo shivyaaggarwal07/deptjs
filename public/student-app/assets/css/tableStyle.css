@@ -143,5 +143,16 @@
       tbody th {
         font-weight: normal;
       }
-  
+      #notice1:hover{
+        opacity:0.8;
+        cursor:pointer;
+      }
+      #notice2:hover{
+        opacity:0.8;
+        cursor:pointer;
+      }
+  #notice3:hover{
+    opacity:0.8;
+    cursor:pointer;
+  }
   }/*end 41em MQ*/

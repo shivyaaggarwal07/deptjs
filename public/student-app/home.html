@@ -20,7 +20,7 @@
 </head>
 
 <!-- <body onload="load(); loadTT(); DmcStatus(); chkLink(); messageCount();"> -->
-  <body>
+  <body onload="chkLogin();loading();loadTimeTable();load();chkLink();">
 
 
   <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -124,9 +124,10 @@
 
           <div class="border-title"></div>
         </div>
-        <div class="container" style="align-content: center;text-align: center;">
-          <h2>Welcome <span id="nameLabel"></span></h2>
-        </div>
+        <div class="container" style="align-content: center;text-align: center;color:black">
+          <h2 id="none">Welcome <span id="namelabel"></span></h2>
+<!--           <input id="stuname" type="text" placeholder="username">
+ -->        </div>
         
         <div class="container">
           <h2>Notices</h2>
@@ -147,7 +148,7 @@
             </tr>
           </table>
           <div align="right">
-            <a href="../assets/templates/notices.html">View all Notices</a>
+            <a href="assets/templates/notices.html">View all Notices</a>
           </div>
         </div>
 
@@ -160,66 +161,66 @@
 
               <tr>
                 <td>
-                  0900 - 1000 hours
+                  09:00 - 10:00
                 </td>
                 <td>
-                  <label id="mon9-10" for="">Loading...</label>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  1000 - 1100 hours
-                </td>
-                <td>
-                  <label id="mon10-11" for="">Loading...</label>
+                  <label id="mon9-10" for="">Networking</label>
                 </td>
               </tr>
               <tr>
                 <td>
-                  1100 - 1200 hours
+                  10:00 - 11:00
                 </td>
                 <td>
-                  <label id="mon11-12" for="">Loading...</label>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  1200 - 1300 hours
-                </td>
-                <td>
-                  <label id="mon12-1" for="">Loading...</label>
+                  <label id="mon10-11" for="">Microprocessor</label>
                 </td>
               </tr>
               <tr>
                 <td>
-                  1300 - 1400 hours
+                  11:00 - 12:00
                 </td>
                 <td>
-                  <label id="mon1-2" for="">Loading...</label>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  1400 - 1500 hours
-                </td>
-                <td>
-                  <label id="mon2-3" for="">Loading...</label>
+                  <label id="mon11-12" for="">Artificial Intelligence</label>
                 </td>
               </tr>
               <tr>
                 <td>
-                  1500 - 1600 hours
+                  12:00 - 13:00
                 </td>
                 <td>
-                  <label id="mon3-4" for="">Loading...</label>
+                  <label id="mon12-1" for="">Break</label>
                 </td>
               </tr>
               <tr>
                 <td>
-                  1600 - 1700 hours
+                  13:00 - 14:00
                 </td>
                 <td>
-                  <label id="mon4-5" for="">Loading...</label>
+                  <label id="mon1-2" for="">Software Engineering</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  14:00 - 15:00
+                </td>
+                <td>
+                  <label id="mon2-3" for="">C++</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  15:00 - 16:00
+                </td>
+                <td>
+                  <label id="mon3-4" for="">No lecture</label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  16:00 - 17:00
+                </td>
+                <td>
+                  <label id="mon4-5" for="">Operating System</label>
                 </td>
               </tr>
               <tr>
@@ -242,17 +243,17 @@
       <table class="table">
         <tr>
           <td>
-            <label id="teacherLeave1" for="">Loading...</label>
+            <label id="teacherLeave1" for="">Satveer Kaur</label>
           </td>
         </tr>
         <tr>
           <td>
-            <label id="teacherLeave2" for="">Loading...</label>
+            <label id="teacherLeave2" for="">Parminder Kaur</label>
           </td>
         </tr>
         <tr>
           <td>
-            <label id="teacherLeave3" for="">Loading...</label>
+            <label id="teacherLeave3" for="">Gurpreet Singh</label>
           </td>
         </tr>
       </table>

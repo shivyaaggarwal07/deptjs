@@ -1,11 +1,11 @@
-var fyic = document.getElementById("ifyic");
+var checkbox = document.getElementById("ifyic");
 var tyc= document.getElementById("ityc");
 var batch = document.getElementById("ibatch");
 var table = document.getElementById("htmltable");
 function valid()
 {
 	var sno = ["1","2","3","4","5","6","7"];
-	if(fyic.checked==true)
+	if(checkbox.checked==true)
 	{
 		table.style.display="block";
 		var studentsleft={};

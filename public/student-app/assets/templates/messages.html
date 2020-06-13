@@ -14,6 +14,11 @@
   <script src="../js/popper.min.js"></script>
   <script src="../js/local.js"></script>
   <script src="../js/messages.js"></script>
+  <style>
+    .cancel{
+      text-decoration:line-through;
+    }
+  </style>
 </head>
 
 <!-- <body onload="local(); chkLink(); loadMsg();"> -->
@@ -54,7 +59,7 @@
               <li>
                 <a href="jashan-form.html">Jashan Form</a>
               </li>
-              <li>
+              <!-- <li>
                 <a id="linkID" href="http://www.gnduadmissions.org/dhanpreet_idmay2017/idoddsem_index.asp" target="_blank">ID Courses</a>
               </li>
             </ul>
@@ -67,15 +72,15 @@
               <li>
                 <a id="linkFee" href="http://slc.gndu.ac.in/StudentArea/Login.aspx" target="_blank">Generate Fee Slip</a>
               </li>
-
+ -->
             </ul>
           </li>
 
 
 
-          <li>
+<!--           <li>
             <a href="syllabus.html">Syllabus</a>
-          </li>
+          </li> -->
           <li class="active">
             <a href="messages.html">Messages</a>
           </li>
@@ -122,12 +127,12 @@
           <div  class="border-title"></div>
         </div>
         <div id="messages"> 
-          
+          Your fee concession form has been accepted. Kindly collect it from the office at 10 am.
         </div>
         
         <div style="text-align: center;">
           
-          <button type="submit" class="btn btn-primary" style="width:20%" onclick="markRead();">MARK AS READ</button>
+          <button type="submit" class="btn btn-primary" style="width:20%" onclick="msg();">MARK AS READ</button>
         </div>
       </div>
     </div>

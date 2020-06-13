@@ -14,7 +14,7 @@ function load() {
         var motherName = document.getElementById("mothername");
 
         //if(data.registrationNumber!=NULL || data.registrationNumber!=undefined){
-        regNo.value = data.registrationNumber;
+        // regNo.value = data.registrationNumber;
         //}
         //if(data.personalDetail.fatherName!=NULL || data.personalDetail.fatherName!=undefined){
         fatherName.value = data.personalDetail.fatherName;

@@ -20,3 +20,7 @@ else
 	// tyc.style.display="none";
 }
 }
+function checking()
+{
+
+}

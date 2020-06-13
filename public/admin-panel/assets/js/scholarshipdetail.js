@@ -16,5 +16,6 @@ function scholarship()
 		incomecertificate.value=data.incomecertificate;
 		residencecertificate.value=data.residencecertificate;
 		feeconcession.value=data.feeconcession;
+		key.value
 	});
 }

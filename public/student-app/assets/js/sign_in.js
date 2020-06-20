@@ -15,6 +15,14 @@ function viewPassword()
     passStatus.className='fas fa-eye';
   }
 }
+function myFunction() {
+  // var x = document.getElementById("password");
+  if (password.type === "password") {
+    password.type = "text";
+  } else {
+    password.type = "password";
+  }
+}
 var data={};
 var originalPassword = "";
 function signin(){

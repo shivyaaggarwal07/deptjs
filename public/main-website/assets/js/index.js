@@ -59,15 +59,15 @@ function load(){
         teacherDetail7.innerHTML = data.teacherDetail7;
         teacherDetail8.innerHTML = data.teacherDetail8;
         teacherDetail9.innerHTML = data.teacherDetail9;
-        teacherImage1.inneHTML.src="";
-        teacherImage2.inneHTML.src="";
-        teacherImage3.inneHTML.src="";
-        teacherImage4.inneHTML.src="";
-        teacherImage5.inneHTML.src="";
-        teacherImage6.inneHTML.src="";
-        teacherImage7.inneHTML.src="";
-        teacherImage8.inneHTML.src="";
-        teacherImage8.inneHTML.src="";
+        teacherImage1.innerHTML.src="";
+        teacherImage2.innerHTML.src="";
+        teacherImage3.innerHTML.src="";
+        teacherImage4.innerHTML.src="";
+        teacherImage5.innerHTML.src="";
+        teacherImage6.innerHTML.src="";
+        teacherImage7.innerHTML.src="";
+        teacherImage8.innerHTML.src="";
+        teacherImage8.innerHTML.src="";
         
 
         
@@ -93,9 +93,9 @@ function load(){
         name3.innerHTML = data1.name3;
         message3.innerHTML = data1.message3;
        
-        image1.inneHTML.src="";
-        image2.inneHTML.src="";
-        image3.inneHTML.src="";
+        image1.innerHTML.src="";
+        image2.innerHTML.src="";
+        image3.innerHTML.src="";
         
     })
 }

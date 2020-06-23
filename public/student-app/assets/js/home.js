@@ -132,19 +132,19 @@ function load() {
     // nameLabel.innerHTML = firstName[0];
 
 
-    firebase.database().ref().child('gndu-amritsar/teacheronleave/2020-06-03').on('value', function (snapshot2) {
-        data = snapshot2.val();
+//     firebase.database().ref().child('gndu-amritsar/teacheronleave/2020-06-16').on('value', function (snapshot2) {
+//         data = snapshot2.val();
 
-        var teacherLeave1 = document.getElementById("teacherLeave1");
-        var teacherLeave2 = document.getElementById("teacherLeave2");
-        var teacherLeave3 = document.getElementById("teacherLeave3");
+//         var teacherLeave1 = document.getElementById("teacherLeave1");
+//         var teacherLeave2 = document.getElementById("teacherLeave2");
+//         var teacherLeave3 = document.getElementById("teacherLeave3");
 
-        teacherLeave1.innerHTML = data.teacherName;
-        teacherLeave2.innerHTML = data.teacherName;
-        teacherLeave3.innerHTML = data.teacherName;
+//         teacherLeave1.innerHTML = data.teacherName;
+//         teacherLeave2.innerHTML = data.teacherName;
+//         teacherLeave3.innerHTML = data.teacherName;
 
-    })
-}
+//     })
+// }
 
 function DmcStatus(){
     firebase.database().ref('gndu-amritsar/DmcDistribution/'+localStorage.getItem('class')+'/'+localStorage.getItem('rollNo')).on('value', function (snapshot2) {

@@ -51,7 +51,535 @@ background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF); /* W3C, IE 10+
     </style>
 <body>
     <!-- Page formatting code -->
-    <section id="team" class="section grey-section">
+    <!DOCTYPE html>
+<html>
+<!-- Mirrored from colorlib.com/polygon/adminator/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 25 Feb 2018 14:08:03 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<!-- /Added by HTTrack -->
+
+<head>
+  <title>Home</title>
+  <style>
+    #loader {
+      transition: all .3s ease-in-out;
+      opacity: 1;
+      visibility: visible;
+      position: fixed;
+      height: 100vh;
+      width: 100%;
+      background: #fff;
+      z-index: 90000
+    }
+
+    #loader.fadeOut {
+      opacity: 0;
+      visibility: hidden
+    }
+
+    .spinner {
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: calc(50% - 20px);
+      left: calc(50% - 20px);
+      background-color: #333;
+      border-radius: 100%;
+      -webkit-animation: sk-scaleout 1s infinite ease-in-out;
+      animation: sk-scaleout 1s infinite ease-in-out
+    }
+
+    @-webkit-keyframes sk-scaleout {
+      0% {
+        -webkit-transform: scale(0)
+      }
+      100% {
+        -webkit-transform: scale(1);
+        opacity: 0
+      }
+    }
+
+    @keyframes sk-scaleout {
+      0% {
+        -webkit-transform: scale(0);
+        transform: scale(0)
+      }
+      100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0
+      }
+    }
+    .dropdown-menu{
+        font-size:14px;
+    }
+    .h6,h6{
+        font-size:14px;
+    }
+  </style>
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body class="app">
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
+  <script type="text/javascript">window.addEventListener('load', () => {
+      const loader = document.getElementById('loader');
+      setTimeout(() => {
+        loader.classList.add('fadeOut');
+      }, 300);
+    });</script>
+
+  <!-- SIDEBAR -->
+  <div>
+    <div class="sidebar">
+      <div class="sidebar-inner">
+        <div class="sidebar-logo">
+          <div class="peers ai-c fxw-nw">
+            <div class="peer peer-greed">
+              <a class="sidebar-link td-n" href="index.html" class="td-n">
+                <div class="peers ai-c fxw-nw">
+                  <div class="peer">
+                    <div class="logo">
+                      <img src="assets/static/images/logo.png" style="height:50px; width: 50px;" alt="">
+                    </div>
+                  </div>
+                  <div class="peer peer-greed">
+                    <h6 class="lh-1 mB-0 logo-text">DEPARTMENT.js</h6>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="peer">
+              <div class="mobile-toggle sidebar-toggle">
+                <a href="#" class="td-n">
+                  <i class="ti-arrow-circle-left"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul class="sidebar-menu scrollable pos-r">
+          <li class="nav-item mT-30 active">
+            <a class="sidebar-link" href="../admin-panel/home.html" default>
+              <span class="icon-holder">
+                <i class="c-blue-500 ti-home"></i>
+              </span>
+              <span class="title">Home</span>
+            </a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="sidebar-link" href="dmc-distribution.html">
+              <span class="icon-holder">
+                <i class="c-brown-500 ti-email"></i>
+              </span>
+              <span class="title">Add New Batch</span>
+            </a>
+          </li> -->
+          <li class="nav-item dropdown">
+            <a class="dropdown-toggle" href="javascript:void(0);">
+              <span class="icon-holder">
+                <i class="c-deep-orange-500 ti-calendar"></i>
+              </span>
+              <span class="title">Notices</span>
+              <span class="arrow">
+                <i class="ti-angle-right"></i>
+              </span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="sidebar-link" href="noticecreation.html"><span class="icon-holder">
+                <i class="c-deep-orange-500 ti-import"></i>
+              </span>Add A New Notice</a>
+              </li>
+              <li>
+                <a class="sidebar-link" href="ViewNotices.html"><span class="icon-holder">
+                <i class="c-deep-orange-500 ti-image"></i>
+              </span>View All Notices</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="dropdown-toggle"  href="javascript:void(0);">
+              <span class="icon-holder">
+                <i class="c-orange-500 ti-layout-list-thumb"></i>
+              </span>
+              <span class="title">Student</span>
+              <span class="arrow">
+                <i class="ti-angle-right"></i>
+              </span>
+            </a> 
+            <ul class="dropdown-menu">
+              <li>
+                <a class="sidebar-link" href="addnewbatch.html"><span class="icon-holder">
+                <i class="c-orange-500 ti-plus"></i>
+              </span>Add A Batch</a>
+              </li>
+              <li>
+                <a class="sidebar-link" href="addastudent.html"><span class="icon-holder">
+                <i class="c-orange-500 ti-plus"></i>
+              </span>Add A Student</a>
+              </li>
+             <li>
+                <a class="sidebar-link" href="personalnotice.html"><span class="icon-holder">
+                <i class="c-orange-500 ti-list"></i>
+               </span>Send Personal Notice</a>
+              </li>
+              <li>
+              <a class="sidebar-link" href="disgen.html"><span class="icon-holder">
+                <i class="c-orange-500 ti-pencil"></i>
+              </span>Edit Students Details</a>
+            </li>
+          </ul>
+          </li>
+          <li class="nav-item">
+            <a class="sidebar-link" href="links.html">
+              <span class="icon-holder">
+                <i class="c-blue-500 ti-share"></i>
+              </span>
+              <span class="title">Links</span>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="dropdown-toggle" href="javascript:void(0);">
+              <span class="icon-holder">
+                <i class="c-deep-purple-500 ti-comment-alt"></i>
+              </span>
+              <span class="title">Teachers</span>
+              <span class="arrow">
+                <i class="ti-angle-right"></i>
+              </span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="sidebar-link" href="addfaculty.html"><span class="icon-holder">
+                <i class="c-deep-purple-500 ti-plus"></i>
+              </span>Add A New Teacher</a>
+              </li>
+               <li>
+                <a class="sidebar-link" href="teachonleave.html"><span class="icon-holder">
+                <i class="c-deep-purple-500 ti-minus"></i>
+              </span>Teachers Leave</a>
+              </li>
+            </ul>
+          </li>
+        <li class="nav-item dropdown">
+            <a class="dropdown-toggle" href="javascript:void(0);">
+              <span class="icon-holder">
+                <i class="c-indigo-500 ti-bar-chart"></i>
+              </span>
+              <span class="title">Time-Table</span>
+              <span class="arrow">
+              <i class="ti-angle-right"></i>
+              </span>
+            </a>
+            <ul class="dropdown-menu">
+                          <li>
+                <a class="sidebar-link" href="classwisett.html"><span class="icon-holder">
+                <i class="c-indigo-500 ti-clipboard"></i>
+              </span>Class-Wise</a>
+              </li>
+
+            </ul>
+          </li>
+                   <li class="nav-item dropdown">
+            <a class="sidebar-link" href="dmcdistribution-form.html">
+              <span class="icon-holder">
+                <i class="c-pink-500 ti-palette"></i>
+              </span>
+              <span class="title">View DMC Status</span>
+            </a>
+          </li>
+           <li class="nav-item dropdown">
+            <a class="dropdown-toggle" href="javascript:void(0);">
+              <span class="icon-holder">
+                <i class="c-green-500 ti-agenda"></i>
+              </span>
+              <span class="title">Details</span>
+              <span class="arrow">
+              <i class="ti-angle-right"></i>
+              </span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="sidebar-link" href="jashanlist.html"><span class="icon-holder">
+                <i class="c-green-500 ti-list"></i>
+              </span>Jashan List</a>
+              </li>
+              <li>
+                <a class="sidebar-link" href="scholarshipdetail.html"><span class="icon-holder">
+                <i class="c-green-500 ti-list"></i>
+              </span>Scholarship List</a>
+              </li>
+              <li>
+                <a class="sidebar-link" href="sportsdetail-form.html"><span class="icon-holder">
+                <i class="c-green-500 ti-list"></i>
+              </span>Sports List</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="dropdown-toggle" href="javascript:void(0);">
+              <span class="icon-holder">
+                <i class="c-orange-500 ti-layout-list-thumb"></i>
+              </span>
+              <span class="title">Profile</span>
+              <span class="arrow">
+                <i class="ti-angle-right"></i>
+              </span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="sidebar-link" href="../student-app/assets/templates/account.html"><span class="icon-holder">
+                <i class="c-orange-500 ti-pencil"></i>
+              </span>Manage Details</a>
+              </li>
+              <li>
+                <a class="sidebar-link" href="../student-app/assets/templates/changePassword.html"><span class="icon-holder">
+                <i class="c-orange-500 ti-key"></i>
+              </span>Change Secret Key</a>
+              </li>
+              <li>
+                <a class="sidebar-link" href="../student-app/assets/templates/sign-in.html"><span class="icon-holder">
+                <i class="c-orange-500 ti-user"></i>
+              </span>LogOut</a>
+              </li>
+            </ul>
+          </li>
+          
+          
+          
+        </ul>
+      </div>
+    </div>
+    <div class="page-container">
+
+
+      <!-- NAVBAR STARTS -->
+      <div class="header navbar">
+        <div class="header-container">
+          <ul class="nav-left">
+            <li>
+              <a id="sidebar-toggle" class="sidebar-toggle" href="javascript:void(0);">
+                <i class="ti-menu"></i>
+              </a>
+            </li>
+            <li class="search-box">
+              <a class="search-toggle no-pdd-right" href="javascript:void(0);">
+                <i class="search-icon ti-search pdd-right-10"></i>
+                <i class="search-icon-close ti-close pdd-right-10"></i>
+              </a>
+            </li>
+            <li class="search-input">
+              <input class="form-control" type="text" placeholder="Search...">
+            </li>
+          </ul>
+          <ul class="nav-right">
+            <li class="notifications dropdown">
+              <a href="#" class="dropdown-toggle no-after" data-toggle="dropdown">
+                <i class="ti-bell"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="pX-20 pY-15 bdB">
+                  <i class="ti-bell pR-10"></i>
+                  <span class="fsz-sm fw-600 c-grey-900">Notifications</span>
+                </li>
+                <li>
+                  <ul class="ovY-a pos-r scrollable lis-n p-0 m-0 fsz-sm">
+                    <li>
+                      <a href="#" class="peers fxw-nw td-n p-20 bdB c-grey-800 cH-blue bgcH-grey-100">
+                        <div class="peer mR-15">
+                          <img class="w-3r bdrs-50p" src="../../../randomuser.me/api/portraits/men/1.jpg" alt="">
+                        </div>
+                        <div class="peer peer-greed">
+                          <span>
+                            <span class="fw-500">John Doe</span>
+                            <span class="c-grey-600">liked your
+                              <span class="text-dark">post</span>
+                            </span>
+                          </span>
+                          <p class="m-0">
+                            <small class="fsz-xs">5 mins ago</small>
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="peers fxw-nw td-n p-20 bdB c-grey-800 cH-blue bgcH-grey-100">
+                        <div class="peer mR-15">
+                          <img class="w-3r bdrs-50p" src="../../../randomuser.me/api/portraits/men/2.jpg" alt="">
+                        </div>
+                        <div class="peer peer-greed">
+                          <span>
+                            <span class="fw-500">Moo Doe</span>
+                            <span class="c-grey-600">liked your
+                              <span class="text-dark">cover image</span>
+                            </span>
+                          </span>
+                          <p class="m-0">
+                            <small class="fsz-xs">7 mins ago</small>
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="peers fxw-nw td-n p-20 bdB c-grey-800 cH-blue bgcH-grey-100">
+                        <div class="peer mR-15">
+                          <img class="w-3r bdrs-50p" src="../../../randomuser.me/api/portraits/men/3.jpg" alt="">
+                        </div>
+                        <div class="peer peer-greed">
+                          <span>
+                            <span class="fw-500">Lee Doe</span>
+                            <span class="c-grey-600">commented on your
+                              <span class="text-dark">video</span>
+                            </span>
+                          </span>
+                          <p class="m-0">
+                            <small class="fsz-xs">10 mins ago</small>
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="pX-20 pY-15 ta-c bdT">
+                  <span>
+                    <a href="#" class="c-grey-600 cH-blue fsz-sm td-n">View All Notifications
+                      <i class="ti-angle-right fsz-xs mL-10"></i>
+                    </a>
+                  </span>
+                </li>
+              </ul>
+            </li>
+            <li class="notifications dropdown">
+              <a href="#" class="dropdown-toggle no-after" data-toggle="dropdown">
+                <i class="ti-email"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li class="pX-20 pY-15 bdB">
+                  <i class="ti-email pR-10"></i>
+                  <span class="fsz-sm fw-600 c-grey-900">Emails</span>
+                </li>
+                <li>
+                  <ul class="ovY-a pos-r scrollable lis-n p-0 m-0 fsz-sm">
+                    <li>
+                      <a href="#" class="peers fxw-nw td-n p-20 bdB c-grey-800 cH-blue bgcH-grey-100">
+                        <div class="peer mR-15">
+                          <img class="w-3r bdrs-50p" src="../../../randomuser.me/api/portraits/men/1.jpg" alt="">
+                        </div>
+                        <div class="peer peer-greed">
+                          <div>
+                            <div class="peers jc-sb fxw-nw mB-5">
+                              <div class="peer">
+                                <p class="fw-500 mB-0">John Doe</p>
+                              </div>
+                              <div class="peer">
+                                <small class="fsz-xs">5 mins ago</small>
+                              </div>
+                            </div>
+                            <span class="c-grey-600 fsz-sm">Want to create your own customized data generator for your app...</span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="peers fxw-nw td-n p-20 bdB c-grey-800 cH-blue bgcH-grey-100">
+                        <div class="peer mR-15">
+                          <img class="w-3r bdrs-50p" src="../../../randomuser.me/api/portraits/men/2.jpg" alt="">
+                        </div>
+                        <div class="peer peer-greed">
+                          <div>
+                            <div class="peers jc-sb fxw-nw mB-5">
+                              <div class="peer">
+                                <p class="fw-500 mB-0">Moo Doe</p>
+                              </div>
+                              <div class="peer">
+                                <small class="fsz-xs">15 mins ago</small>
+                              </div>
+                            </div>
+                            <span class="c-grey-600 fsz-sm">Want to create your own customized data generator for your app...</span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="peers fxw-nw td-n p-20 bdB c-grey-800 cH-blue bgcH-grey-100">
+                        <div class="peer mR-15">
+                          <img class="w-3r bdrs-50p" src="../../../randomuser.me/api/portraits/men/3.jpg" alt="">
+                        </div>
+                        <div class="peer peer-greed">
+                          <div>
+                            <div class="peers jc-sb fxw-nw mB-5">
+                              <div class="peer">
+                                <p class="fw-500 mB-0">Lee Doe</p>
+                              </div>
+                              <div class="peer">
+                                <small class="fsz-xs">25 mins ago</small>
+                              </div>
+                            </div>
+                            <span class="c-grey-600 fsz-sm">Want to create your own customized data generator for your app...</span>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="pX-20 pY-15 ta-c bdT">
+                  <span>
+                    <a href="#" class="c-grey-600 cH-blue fsz-sm td-n">View All Email
+                      <i class="fs-xs ti-angle-right mL-10"></i>
+                    </a>
+                  </span>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle no-after peers fxw-nw ai-c lh-1" data-toggle="dropdown">
+                <div class="peer mR-10">
+                  <img class="w-2r bdrs-50p" src="../../../randomuser.me/api/portraits/men/10.jpg" alt="">
+                </div>
+                <div class="peer">
+                  <span class="fsz-sm c-grey-900">Swaran Singh</span>
+                </div>
+              </a>
+              <ul class="dropdown-menu fsz-sm">
+                <li>
+                  <a href="#" class="d-b td-n pY-5 bgcH-grey-100 c-grey-700">
+                    <i class="ti-user mR-10"></i>
+                    <span>Profile</span>
+                  </a>
+                </li>
+                <li role="separator" class="divider"></li>
+                <li>
+                  <a href="#" class="d-b td-n pY-5 bgcH-grey-100 c-grey-700">
+                    <i class="ti-power-off mR-10"></i>
+                    <span>Logout</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- NAVBAR ENDS -->
+
+
+
+
+
+
+
+
+
+
+      <!-- MAIN CONTENT TO BE POSTED HERE -->
+
+ 
+      <main class="main-content bgc-grey-100">
+        <div id="mainContent">
+             <section id="team" class="section grey-section">
         <div class="white-shape">
             <div class="icon-container fixed border-radius">
                 <i class="fa fa-users"></i>
@@ -67,32 +595,32 @@ background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF); /* W3C, IE 10+
                 <!-- dropdown menu code -->
                 <div class="form-group col-md-2">
                     <label for="inputState">Batch</label>
-                    <select id="ibatch" class="form-control">
+                    <select id="ibatch" class="form-control" disabled>
                         <option selected="selected" value="choose">Select the Batch</option>
                         <option>2015-2018</option>
                         <option>2016-2019</option>
-                        <option>2017-2020</option>
+                        <option selected>2017-2020</option>
                         <option>2018-2021</option>
                         <option>2019-2022</option>
                     </select>
                 </div>
                 <div class="form-group col-md-2">
-                	<label for="inputState">Course Type</label>
-                	<select id="itype" class="form-control">
-                		<option>MCA(FYIC)</option>
-                		<option>MCA(TYC)</option>
-                	</select>
+                    <label for="inputState">Course Type</label>
+                    <select id="itype" class="form-control" disabled>
+                        <option selected>MCA(FYIC)</option>
+                        <option>MCA(TYC)</option>
+                    </select>
                 </div>
                 <div class="form-group col-md-2">
                     <label for="inputState">Semester</label>
-                    <select id="isemester" class="form-control">
+                    <select id="isemester" class="form-control" disabled>
                         <option selected="selected">Select the semester</option>
                         <option>Sem-1</option>
                         <option>Sem-2</option>
                         <option>Sem-3</option>
                         <option>Sem-4</option>
                         <option>Sem-5</option>
-                        <option>Sem-6</option>
+                        <option selected>Sem-6</option>
                         <option>Sem-7</option>
                         <option>Sem-8</option>
                         <option>Sem-9</option>
@@ -131,7 +659,7 @@ background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF); /* W3C, IE 10+
                                                     </td>
                                                     <td>
                                                         <label class="switch" id="istatus">
-                                                            <input type="checkbox" id="first" onclick="show('first');">
+                                                            <input type="checkbox" id="first" onclick="show('first','2017CSC1048');">
                                                             <span class="slider round"></span>
                                                         </label>
                                                     </td>
@@ -145,7 +673,7 @@ background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF); /* W3C, IE 10+
                                                             </td>
                                                             <td>
                                                                 <label class="switch" id="istatus">
-                                                                    <input type="checkbox" id="second" onchange ="show('second')">
+                                                                    <input type="checkbox" id="second" onchange ="show('second','2017CSC1053')">
                                                                     <span class="slider round"></span>
                                                                 </label>
                                                             </td>
@@ -159,7 +687,7 @@ background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF); /* W3C, IE 10+
                                                             </td>
                                                             <td>
                                                                 <label class="switch" id="istatus">
-                                                                    <input type="checkbox" id="third" onchange="show('third')">
+                                                                    <input type="checkbox" id="third" onchange="show('third', '2017CSC1033')">
                                                                     <span class="slider round"></span>
                                                                 </label>
                                                             </td>
@@ -173,7 +701,7 @@ background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF); /* W3C, IE 10+
                                                             </td>
                                                             <td>
                                                                 <label class="switch" id="istatus">
-                                                                    <input type="checkbox" id="fourth" onchange="show('fourth')">
+                                                                    <input type="checkbox" id="fourth" onchange="show('fourth', '2017CSC1027')">
                                                                     <span class="slider round"></span>
                                                                 </label>
                                                             </td>
@@ -201,7 +729,7 @@ background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF); /* W3C, IE 10+
                                                             </td>
                                                             <td>
                                                                 <label class="switch" id="istatus">
-                                                                    <input type="checkbox" id="sixth" onchange="show('sixth')">
+                                                                    <input type="checkbox" id="sixth" onchange="show('sixth' , '2017CSC1088')">
                                                                     <span class="slider round"></span>
                                                                 </label>
                                                             </td>
@@ -212,12 +740,32 @@ background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF); /* W3C, IE 10+
                                         </table>
                                         <div class="form-group row">
                                         <div class="col-sm-10">
-                                        <input type="submit" class="btn btn-primary" onclick="validate();">
+                                        <!-- <input type="submit" class="btn btn-primary" onclick="validate();"> -->
                                     </div>
                                     </div>
                 </main>
                 </div>
                 </div>
     </section>  
+        </div>
+      </main>
+
+
+
+
+
+
+
+
+
+
+      <footer class="bdT ta-c p-30 lh-0 fsz-sm c-grey-600">
+        <span>Copyright © DEPARTMENT js. All rights reserved.</span>
+      </footer>
+    </div>
+  </div>
+  <script type="text/javascript" src="vendor.js"></script>
+  <script type="text/javascript" src="bundle.js"></script>
+<!-- Mirrored from colorlib.com/polygon/adminator/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 25 Feb 2018 14:08:13 GMT -->
 </body>
 </html>

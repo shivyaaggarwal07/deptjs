@@ -1,0 +1,44 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>MY TODO</title>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"> </script>
+	    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+	    <link rel="stylesheet" href="../css/styletodo.css">
+	      <link rel="icon" href="../images/deptjs.png" type="images/png">
+
+	</head>
+	<body onload="loading();">
+		<div class="container">
+			<div class="header">
+				<h3>Welcome <span id="name"></span></h3>
+				<!-- clearing the localstorage -->
+				<div class="clear"> 
+					<i class="fas fa-sync"></i>
+				</div>
+				<!-- this will show today's date -->
+				<div id="date"></div>
+
+			</div>
+			<div class="content">
+				<ul id="list">
+					<!-- li has three items -->
+					<!-- <li class="item"> -->
+						<!-- first is button check -->
+						<!-- <i class="far fa-check-circle co" job="complete" id="0"></i> -->
+						<!-- then text -->
+						<!-- <p class="text linethrough">Drink Coffee</p> -->
+						<!-- Trash button -->
+						<!-- <i class="far fa-trash-alt de" job="delete" id="0"></i> -->
+					<!-- </li> -->
+				</ul>
+			</div>
+				<div class="add-to-do">
+					<i class="fa fa-plus-circle"></i>
+					<input type="text" id="input" placeholder="Add A To-do">
+				</div>
+			</div>
+		<!-- </div> -->
+		<script type="text/javascript" src="../js/todoapp.js"></script>
+	</body>
+	</html>

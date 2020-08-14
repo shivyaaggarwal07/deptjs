@@ -8,7 +8,6 @@ function viewPassword()
   if (passwordInput.type == 'password'){
     passwordInput.type='text';
     passStatus.className='fas fa-eye-slash';
-    
   }
   else{
     passwordInput.type='password';
